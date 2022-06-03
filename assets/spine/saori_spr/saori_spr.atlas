@@ -1,0 +1,188 @@
+
+saori_spr.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00_default
+  rotate: false
+  xy: 637, 887
+  size: 91, 63
+  orig: 91, 63
+  offset: 0, 0
+  index: -1
+01_normal
+  rotate: false
+  xy: 320, 811
+  size: 91, 63
+  orig: 91, 63
+  offset: 0, 0
+  index: -1
+02_respond
+  rotate: false
+  xy: 2, 284
+  size: 91, 62
+  orig: 91, 62
+  offset: 0, 0
+  index: -1
+03_smile 1
+  rotate: false
+  xy: 920, 519
+  size: 91, 62
+  orig: 91, 62
+  offset: 0, 0
+  index: -1
+04_embarassed
+  rotate: false
+  xy: 305, 279
+  size: 91, 61
+  orig: 91, 61
+  offset: 0, 0
+  index: -1
+08_serious
+  rotate: false
+  xy: 212, 277
+  size: 91, 61
+  orig: 91, 61
+  offset: 0, 0
+  index: -1
+09_depressed
+  rotate: false
+  xy: 118, 276
+  size: 91, 60
+  orig: 91, 60
+  offset: 0, 0
+  index: -1
+10_fury 2
+  rotate: false
+  xy: 2, 952
+  size: 94, 71
+  orig: 94, 71
+  offset: 0, 0
+  index: -1
+10_irritated
+  rotate: false
+  xy: 931, 646
+  size: 91, 63
+  orig: 91, 63
+  offset: 0, 0
+  index: -1
+11_shout
+  rotate: false
+  xy: 598, 952
+  size: 91, 71
+  orig: 91, 71
+  offset: 0, 0
+  index: -1
+12_fury
+  rotate: false
+  xy: 97, 950
+  size: 91, 72
+  orig: 91, 72
+  offset: 0, 0
+  index: -1
+13_smile 2
+  rotate: false
+  xy: 2, 886
+  size: 91, 65
+  orig: 91, 65
+  offset: 0, 0
+  index: -1
+14_smile 3
+  rotate: false
+  xy: 902, 583
+  size: 93, 61
+  orig: 93, 61
+  offset: 0, 0
+  index: -1
+15_shy
+  rotate: false
+  xy: 490, 281
+  size: 91, 62
+  orig: 91, 62
+  offset: 0, 0
+  index: -1
+16_hesitate
+  rotate: false
+  xy: 398, 280
+  size: 91, 62
+  orig: 91, 62
+  offset: 0, 0
+  index: -1
+eyeclose
+  rotate: false
+  xy: 2, 220
+  size: 88, 63
+  orig: 88, 63
+  offset: 0, 0
+  index: -1
+flush
+  rotate: false
+  xy: 830, 658
+  size: 92, 44
+  orig: 92, 44
+  offset: 0, 0
+  index: -1
+fronthair
+  rotate: false
+  xy: 802, 704
+  size: 178, 183
+  orig: 178, 183
+  offset: 0, 0
+  index: -1
+halo_1
+  rotate: false
+  xy: 318, 875
+  size: 146, 148
+  orig: 146, 148
+  offset: 0, 0
+  index: -1
+halo_2
+  rotate: false
+  xy: 765, 856
+  size: 194, 166
+  orig: 194, 166
+  offset: 0, 0
+  index: -1
+mask
+  rotate: false
+  xy: 490, 219
+  size: 87, 61
+  orig: 87, 61
+  offset: 0, 0
+  index: -1
+mask_0
+  rotate: false
+  xy: 490, 219
+  size: 87, 61
+  orig: 87, 61
+  offset: 0, 0
+  index: -1
+saori_001
+  rotate: 180
+  xy: 580, 211
+  size: 443, 505
+  orig: 762, 1159
+  offset: 82, 654
+  index: -1
+saori_002
+  rotate: false
+  xy: 2, 337
+  size: 762, 686
+  orig: 762, 1159
+  offset: 0, 0
+  index: -1
+sweat
+  rotate: false
+  xy: 195, 1018
+  size: 3, 5
+  orig: 3, 5
+  offset: 0, 0
+  index: -1
+sweat 2
+  rotate: false
+  xy: 190, 1017
+  size: 3, 5
+  orig: 3, 5
+  offset: 0, 0
+  index: -1

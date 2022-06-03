@@ -1,0 +1,153 @@
+
+hiyori_spr.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01_normal
+  rotate: true
+  xy: 780, 114
+  size: 51, 52
+  orig: 51, 52
+  offset: 0, 0
+  index: -1
+00_defualt
+  rotate: true
+  xy: 780, 114
+  size: 51, 52
+  orig: 51, 52
+  offset: 0, 0
+  index: -1
+02_respond
+  rotate: false
+  xy: 780, 293
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+03_smile
+  rotate: true
+  xy: 780, 573
+  size: 56, 54
+  orig: 56, 54
+  offset: 0, 0
+  index: -1
+04_embarassed
+  rotate: true
+  xy: 780, 457
+  size: 54, 53
+  orig: 54, 53
+  offset: 0, 0
+  index: -1
+04_paleshadow
+  rotate: false
+  xy: 879, 797
+  size: 41, 66
+  orig: 44, 68
+  offset: 1, 1
+  index: -1
+04_sweat
+  rotate: true
+  xy: 835, 523
+  size: 48, 65
+  orig: 48, 65
+  offset: 0, 0
+  index: -1
+05_serious
+  rotate: true
+  xy: 780, 402
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+06_depressed
+  rotate: true
+  xy: 780, 513
+  size: 58, 53
+  orig: 58, 53
+  offset: 0, 0
+  index: -1
+06_flush
+  rotate: false
+  xy: 837, 649
+  size: 64, 42
+  orig: 67, 45
+  offset: 1, 1
+  index: -1
+07
+  rotate: true
+  xy: 827, 186
+  size: 51, 52
+  orig: 51, 52
+  offset: 0, 0
+  index: -1
+08
+  rotate: false
+  xy: 780, 239
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+08_flush
+  rotate: true
+  xy: 780, 167
+  size: 70, 45
+  orig: 72, 47
+  offset: 1, 1
+  index: -1
+09
+  rotate: true
+  xy: 780, 347
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+10
+  rotate: false
+  xy: 780, 631
+  size: 55, 60
+  orig: 55, 60
+  offset: 0, 0
+  index: -1
+10_flush
+  rotate: true
+  xy: 834, 114
+  size: 70, 45
+  orig: 72, 47
+  offset: 1, 1
+  index: -1
+10_sweat
+  rotate: false
+  xy: 2, 2
+  size: 19, 6
+  orig: 20, 8
+  offset: 1, 0
+  index: -1
+eyeclose
+  rotate: false
+  xy: 834, 403
+  size: 51, 52
+  orig: 51, 52
+  offset: 0, 0
+  index: -1
+fronthair
+  rotate: true
+  xy: 780, 693
+  size: 170, 97
+  orig: 171, 114
+  offset: 1, 1
+  index: -1
+halo
+  rotate: true
+  xy: 780, 865
+  size: 144, 102
+  orig: 146, 104
+  offset: 1, 1
+  index: -1
+hiyori
+  rotate: false
+  xy: 2, 10
+  size: 776, 999
+  orig: 776, 999
+  offset: 0, 0
+  index: -1

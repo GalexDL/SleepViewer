@@ -6,21 +6,21 @@ filter: Linear,Linear
 repeat: none
 00
   rotate: false
-  xy: 2, 848
+  xy: 2, 398
   size: 101, 77
   orig: 101, 77
   offset: 0, 0
   index: -1
 01_normal
   rotate: false
-  xy: 2, 848
+  xy: 2, 398
   size: 101, 77
   orig: 101, 77
   offset: 0, 0
   index: -1
 02_respond
   rotate: false
-  xy: 587, 851
+  xy: 2, 766
   size: 101, 78
   orig: 101, 78
   offset: 0, 0
@@ -41,21 +41,21 @@ repeat: none
   index: -1
 05_serious
   rotate: false
-  xy: 199, 229
+  xy: 191, 151
   size: 101, 70
   orig: 101, 70
   offset: 0, 0
   index: -1
 06_depressed
   rotate: false
-  xy: 302, 230
+  xy: 823, 137
   size: 95, 70
   orig: 95, 70
   offset: 0, 0
   index: -1
 07
   rotate: false
-  xy: 103, 250
+  xy: 96, 167
   size: 94, 77
   orig: 94, 77
   offset: 0, 0
@@ -76,7 +76,7 @@ repeat: none
   index: -1
 10
   rotate: false
-  xy: 642, 403
+  xy: 2, 234
   size: 92, 83
   orig: 92, 83
   offset: 0, 0
@@ -90,30 +90,58 @@ repeat: none
   index: -1
 12
   rotate: false
-  xy: 589, 773
+  xy: 2, 319
   size: 101, 76
   orig: 101, 76
   offset: 0, 0
   index: -1
 13
   rotate: false
-  xy: 2, 399
+  xy: 208, 224
   size: 101, 76
   orig: 101, 76
   offset: 0, 0
   index: -1
 14
   rotate: false
-  xy: 2, 320
+  xy: 739, 209
   size: 99, 76
   orig: 99, 76
   offset: 0, 0
   index: -1
 15
   rotate: false
-  xy: 2, 769
+  xy: 105, 245
   size: 101, 76
   orig: 101, 76
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 588, 842
+  size: 102, 86
+  orig: 102, 86
+  offset: 0, 0
+  index: -1
+17
+  rotate: false
+  xy: 2, 846
+  size: 101, 79
+  orig: 101, 79
+  offset: 0, 0
+  index: -1
+18
+  rotate: false
+  xy: 590, 756
+  size: 94, 84
+  orig: 94, 84
+  offset: 0, 0
+  index: -1
+19
+  rotate: false
+  xy: 641, 402
+  size: 94, 84
+  orig: 94, 84
   offset: 0, 0
   index: -1
 CH0069
@@ -146,8 +174,8 @@ Halo
   index: -1
 eyeclose
   rotate: false
-  xy: 2, 243
-  size: 94, 75
+  xy: 840, 209
+  size: 96, 77
   orig: 96, 77
-  offset: 1, 1
+  offset: 0, 0
   index: -1
