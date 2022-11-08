@@ -5,149 +5,177 @@ format: RGBA8888
 filter: Linear,Linear
 repeat: none
 01_normal
-  rotate: true
-  xy: 780, 114
-  size: 51, 52
-  orig: 51, 52
+  rotate: false
+  xy: 2, 246
+  size: 55, 56
+  orig: 55, 56
   offset: 0, 0
   index: -1
 00_defualt
-  rotate: true
-  xy: 780, 114
-  size: 51, 52
-  orig: 51, 52
+  rotate: false
+  xy: 2, 246
+  size: 55, 56
+  orig: 55, 56
   offset: 0, 0
   index: -1
 02_respond
   rotate: false
-  xy: 780, 293
-  size: 52, 52
-  orig: 52, 52
+  xy: 2, 304
+  size: 55, 55
+  orig: 55, 55
   offset: 0, 0
   index: -1
 03_smile
-  rotate: true
-  xy: 780, 573
-  size: 56, 54
-  orig: 56, 54
+  rotate: false
+  xy: 2, 419
+  size: 61, 58
+  orig: 61, 58
   offset: 0, 0
   index: -1
 04_embarassed
-  rotate: true
-  xy: 780, 457
-  size: 54, 53
-  orig: 54, 53
+  rotate: false
+  xy: 527, 769
+  size: 58, 57
+  orig: 58, 57
   offset: 0, 0
   index: -1
 04_paleshadow
   rotate: false
-  xy: 879, 797
-  size: 41, 66
-  orig: 44, 68
+  xy: 588, 846
+  size: 44, 71
+  orig: 47, 73
   offset: 1, 1
   index: -1
 04_sweat
-  rotate: true
-  xy: 835, 523
-  size: 48, 65
-  orig: 48, 65
+  rotate: false
+  xy: 2, 479
+  size: 52, 70
+  orig: 52, 70
   offset: 0, 0
   index: -1
 05_serious
-  rotate: true
-  xy: 780, 402
-  size: 53, 52
-  orig: 53, 52
+  rotate: false
+  xy: 587, 771
+  size: 57, 56
+  orig: 57, 56
   offset: 0, 0
   index: -1
 06_depressed
-  rotate: true
-  xy: 780, 513
-  size: 58, 53
-  orig: 58, 53
+  rotate: false
+  xy: 520, 891
+  size: 63, 57
+  orig: 63, 57
   offset: 0, 0
   index: -1
 06_flush
   rotate: false
-  xy: 837, 649
-  size: 64, 42
-  orig: 67, 45
+  xy: 551, 976
+  size: 70, 46
+  orig: 72, 48
   offset: 1, 1
   index: -1
 07
-  rotate: true
-  xy: 827, 186
-  size: 51, 52
-  orig: 51, 52
+  rotate: false
+  xy: 2, 189
+  size: 55, 56
+  orig: 55, 56
   offset: 0, 0
   index: -1
 08
   rotate: false
-  xy: 780, 239
-  size: 52, 52
-  orig: 52, 52
+  xy: 2, 362
+  size: 56, 55
+  orig: 56, 55
   offset: 0, 0
   index: -1
 08_flush
-  rotate: true
-  xy: 780, 167
-  size: 70, 45
-  orig: 72, 47
+  rotate: false
+  xy: 474, 950
+  size: 75, 49
+  orig: 77, 51
   offset: 1, 1
   index: -1
 09
-  rotate: true
-  xy: 780, 347
-  size: 53, 52
-  orig: 53, 52
+  rotate: false
+  xy: 584, 919
+  size: 57, 56
+  orig: 57, 56
   offset: 0, 0
   index: -1
 10
   rotate: false
-  xy: 780, 631
-  size: 55, 60
-  orig: 55, 60
+  xy: 316, 839
+  size: 59, 64
+  orig: 59, 64
   offset: 0, 0
   index: -1
 10_flush
-  rotate: true
-  xy: 834, 114
-  size: 70, 45
-  orig: 72, 47
+  rotate: false
+  xy: 511, 828
+  size: 75, 49
+  orig: 77, 51
   offset: 1, 1
   index: -1
 10_sweat
   rotate: false
-  xy: 2, 2
-  size: 19, 6
-  orig: 20, 8
+  xy: 2, 926
+  size: 20, 6
+  orig: 21, 9
   offset: 1, 0
+  index: -1
+11
+  rotate: false
+  xy: 2, 89
+  size: 56, 39
+  orig: 58, 41
+  offset: 1, 1
+  index: -1
+11_flush
+  rotate: false
+  xy: 2, 1010
+  size: 13, 12
+  orig: 15, 14
+  offset: 1, 1
+  index: -1
+11_tear
+  rotate: false
+  xy: 455, 880
+  size: 62, 69
+  orig: 62, 69
+  offset: 0, 0
   index: -1
 eyeclose
   rotate: false
-  xy: 834, 403
-  size: 51, 52
-  orig: 51, 52
+  xy: 2, 131
+  size: 55, 56
+  orig: 55, 56
   offset: 0, 0
   index: -1
 fronthair
-  rotate: true
-  xy: 780, 693
-  size: 170, 97
-  orig: 171, 114
-  offset: 1, 1
+  rotate: false
+  xy: 2, 934
+  size: 159, 89
+  orig: 184, 123
+  offset: 0, 0
   index: -1
 halo
-  rotate: true
-  xy: 780, 865
-  size: 144, 102
-  orig: 146, 104
-  offset: 1, 1
+  rotate: false
+  xy: 317, 906
+  size: 156, 112
+  orig: 157, 112
+  offset: 0, 0
+  index: -1
+hiyor2
+  rotate: false
+  xy: 2, 398
+  size: 706, 625
+  orig: 836, 1072
+  offset: 130, 0
   index: -1
 hiyori
-  rotate: false
-  xy: 2, 10
-  size: 776, 999
-  orig: 776, 999
-  offset: 0, 0
+  rotate: 180
+  xy: 283, 3
+  size: 701, 516
+  orig: 836, 1072
+  offset: 0, 556
   index: -1

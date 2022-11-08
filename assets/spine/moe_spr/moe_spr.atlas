@@ -1,0 +1,146 @@
+
+moe_spr.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01_normal
+  rotate: false
+  xy: 364, 924
+  size: 104, 73
+  orig: 104, 73
+  offset: 0, 0
+  index: -1
+00_default
+  rotate: false
+  xy: 364, 924
+  size: 104, 73
+  orig: 104, 73
+  offset: 0, 0
+  index: -1
+02_respond
+  rotate: false
+  xy: 470, 924
+  size: 104, 73
+  orig: 104, 73
+  offset: 0, 0
+  index: -1
+03_smile
+  rotate: false
+  xy: 440, 844
+  size: 101, 78
+  orig: 101, 78
+  offset: 0, 0
+  index: -1
+04_embarassed
+  rotate: false
+  xy: 576, 924
+  size: 104, 73
+  orig: 104, 73
+  offset: 0, 0
+  index: -1
+05_serious
+  rotate: false
+  xy: 543, 843
+  size: 105, 79
+  orig: 105, 79
+  offset: 0, 0
+  index: -1
+06_depressed
+  rotate: false
+  xy: 682, 924
+  size: 104, 73
+  orig: 104, 73
+  offset: 0, 0
+  index: -1
+07
+  rotate: false
+  xy: 2, 860
+  size: 104, 77
+  orig: 104, 77
+  offset: 0, 0
+  index: -1
+08
+  rotate: false
+  xy: 334, 845
+  size: 104, 77
+  orig: 104, 77
+  offset: 0, 0
+  index: -1
+09
+  rotate: false
+  xy: 108, 850
+  size: 111, 75
+  orig: 111, 75
+  offset: 0, 0
+  index: -1
+10
+  rotate: false
+  xy: 221, 848
+  size: 111, 75
+  orig: 111, 75
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 788, 924
+  size: 104, 73
+  orig: 104, 73
+  offset: 0, 0
+  index: -1
+eyeclose
+  rotate: false
+  xy: 894, 924
+  size: 103, 73
+  orig: 103, 73
+  offset: 0, 0
+  index: -1
+glasses
+  rotate: false
+  xy: 183, 927
+  size: 103, 70
+  orig: 103, 70
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 2, 939
+  size: 108, 58
+  orig: 108, 58
+  offset: 0, 0
+  index: -1
+halo_1
+  rotate: false
+  xy: 650, 793
+  size: 137, 129
+  orig: 137, 129
+  offset: 0, 0
+  index: -1
+halo_2
+  rotate: false
+  xy: 112, 932
+  size: 69, 65
+  orig: 69, 65
+  offset: 0, 0
+  index: -1
+halo_light_01
+  rotate: false
+  xy: 789, 788
+  size: 142, 134
+  orig: 142, 134
+  offset: 0, 0
+  index: -1
+halo_light_02
+  rotate: false
+  xy: 288, 925
+  size: 74, 72
+  orig: 74, 72
+  offset: 0, 0
+  index: -1
+moe
+  rotate: true
+  xy: 2, 186
+  size: 600, 890
+  orig: 600, 890
+  offset: 0, 0
+  index: -1

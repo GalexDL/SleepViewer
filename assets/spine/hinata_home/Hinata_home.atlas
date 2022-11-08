@@ -6,7 +6,7 @@ filter: Linear,Linear
 repeat: none
 L_T_eyeblow_calm smile
   rotate: false
-  xy: 2, 1595
+  xy: 2, 1597
   size: 34, 9
   orig: 38, 12
   offset: 2, 1
@@ -83,7 +83,7 @@ L_eye_01
   index: -1
 L_eye_02
   rotate: false
-  xy: 380, 2035
+  xy: 15, 1604
   size: 9, 12
   orig: 11, 15
   offset: 1, 1
@@ -97,7 +97,7 @@ L_eye_03
   index: -1
 L_eye_hightlight
   rotate: false
-  xy: 366, 2038
+  xy: 386, 2035
   size: 12, 9
   orig: 21, 14
   offset: 6, 2
@@ -118,7 +118,7 @@ L_eyeblow_default
   index: -1
 L_eyeblow_eyeclose_1
   rotate: false
-  xy: 1083, 1658
+  xy: 530, 1167
   size: 62, 52
   orig: 63, 53
   offset: 0, 1
@@ -132,7 +132,7 @@ L_eyeblow_eyeclose_2
   index: -1
 L_eyeblow_halfclose
   rotate: false
-  xy: 506, 1167
+  xy: 404, 1076
   size: 59, 58
   orig: 61, 60
   offset: 1, 0
@@ -363,7 +363,7 @@ R_eye_01
   index: -1
 R_eye_02
   rotate: false
-  xy: 116, 2018
+  xy: 375, 2036
   size: 11, 11
   orig: 14, 15
   offset: 1, 2
@@ -391,7 +391,7 @@ R_eye_white
   index: -1
 R_eyeblow_default
   rotate: false
-  xy: 398, 1114
+  xy: 1085, 1708
   size: 64, 48
   orig: 67, 50
   offset: 2, 0
@@ -405,7 +405,7 @@ R_eyeblow_eyeclose_1
   index: -1
 R_eyeblow_eyeclose_2
   rotate: false
-  xy: 1411, 1999
+  xy: 429, 1110
   size: 59, 46
   orig: 61, 52
   offset: 1, 0
@@ -419,7 +419,7 @@ R_eyeblow_halfclose
   index: -1
 R_eyeblow_pain
   rotate: false
-  xy: 1084, 1711
+  xy: 1408, 2002
   size: 67, 46
   orig: 68, 48
   offset: 0, 0
@@ -515,6 +515,41 @@ R_thigh_gaterbelt
   orig: 194, 86
   offset: 4, 0
   index: -1
+R_thigh_gaterbelt_cover
+  rotate: false
+  xy: 109, 2006
+  size: 11, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+R_thigh_ribbon 1
+  rotate: false
+  xy: 300, 1616
+  size: 35, 40
+  orig: 36, 40
+  offset: 1, 0
+  index: -1
+R_thigh_ribbon 2
+  rotate: false
+  xy: 2, 1603
+  size: 22, 46
+  orig: 22, 46
+  offset: 0, 0
+  index: -1
+R_thigh_ribbon 3
+  rotate: false
+  xy: 1015, 888
+  size: 24, 113
+  orig: 24, 113
+  offset: 0, 0
+  index: -1
+R_thigh_ribbon 4
+  rotate: false
+  xy: 489, 1127
+  size: 47, 100
+  orig: 47, 102
+  offset: 0, 2
+  index: -1
 R_upperarm
   rotate: false
   xy: 1630, 1849
@@ -594,7 +629,7 @@ blush_face_line2
   index: -1
 earring_01
   rotate: false
-  xy: 2, 1604
+  xy: 414, 1730
   size: 33, 19
   orig: 35, 22
   offset: 1, 1
@@ -748,7 +783,7 @@ mouth_normal_a
   index: -1
 mouth_normal_base
   rotate: false
-  xy: 389, 2036
+  xy: 444, 2039
   size: 14, 8
   orig: 15, 9
   offset: 0, 0
@@ -818,7 +853,7 @@ sweat_1
   index: -1
 sweat_2
   rotate: false
-  xy: 109, 2004
+  xy: 119, 2020
   size: 11, 13
   orig: 14, 16
   offset: 1, 1
