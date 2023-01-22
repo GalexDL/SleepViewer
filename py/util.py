@@ -26,7 +26,7 @@ ba_api_data = {
     "curr_build_number": 120365,
     "curr_patch_version": 0
 }
-# 1digit, 2digit, 6digit, might change
+# 1digit, 2digit, 6digit, might change since first found = total downlaods
 regex_version = r"\d{1}\.\d{2}\.\d{6}"
 
 

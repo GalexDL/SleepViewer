@@ -27,20 +27,36 @@ setup.py install --user
 
 # Downloading Models
 ```
-py/getModels.py
+py/get_models.py
 ```
-Downloaded Models located at ./downloaded_resource
-
+## Configuration
+```python
+option = {
+    # Skip resources that already downloaded.
+    "skipExistingDownloadedResource": True,
+    # Skip assets that already exists / extracted.
+    "skipExistingAssets": True,
+    # Force download even no version update.
+    "forceVersion": False,
+    # Download limit, mainly debug purpose since doesn't need to download all of them. Set to 0 to download all.
+    "downloadLimit": 0,
+    # Directory configuration
+    "path": {
+        # Download directory
+        "download": "./assets/download/"
+    }
+}
+```
 Assets (Spine and Audio) located at ./assets
 
 # Generating JSON Data
 ## data/audio.json
 ```
-py/generateAudioJson.py
+py/generate_audio.py
 ```
 This will download VOC_JP audio instead of playing it directly (cors issue ?)
 
-To play audio directly from BA's server, change py/generateModelsJson.py
+To play audio directly from BA's server, change py/generate_audio.py
 ```python
 _type = 1
 ```
@@ -50,7 +66,7 @@ _type = 0
 ```
 ## data/models.json
 ```
-py/generateModelsJson.py
+py/generate_models.py
 ```
 ## And you're done!
 Just launch index.html
