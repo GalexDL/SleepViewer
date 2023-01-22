@@ -1,11 +1,9 @@
+---
 name: Update
-
 on:
-  workflow_dispatch:
+  workflow_dispatch: null
   schedule:
-    - cron: '0 19 * * *'
-
-
+    - cron: 0 19 * * *
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -23,21 +21,26 @@ jobs:
           python setup.py install --user
       - name: Retrieving models
         run: |
-          python ./py/getModels.py
+          python ./py/get_models.py
       - name: Generating models.json
         run: |
-          python ./py/generateModelsJson.py
+          python ./py/generate_models.py
       - name: Generating audio.json
         run: |
-          python ./py/generateAudioJson.py
-      - name: Commit files
+          python ./py/generate_audio.py
+      - name: Create Commit
         run: |
-          git config --local user.email "ucihaibna@yahoo.com"
-          git config --local user.name "respectZ"
           git add .
+          git config --global user.email "bot@github.com"
+          git config --global user.name "Github Bot"
           git commit -m "[Update] $(cat ./data/version.txt)"
-      - name: Push changes
+      - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          force: true
+          branch: update
+      - name: Create Pull Request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create --title "[Update] $(cat ./data/version.txt)" --body "$(cat ./data/version.txt)" --head update
