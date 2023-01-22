@@ -65,7 +65,6 @@ def getResourceURL():
     Return resource url for Blue Archive
     '''
     data = requests.post(ba_api, json=ba_api_data).json()
-    print(json.dumps(data))
     return data["patch"]["resource_path"]
 
 
