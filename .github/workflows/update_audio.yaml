@@ -1,18 +1,16 @@
-name: Update models.json
-
+---
+name: Update Audio
 on:
   workflow_dispatch: null
-
-
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: Generating models.json
+      - name: Generating audio.json
         run: |
-          python ./py/generate_models.py
+          python ./py/generate_audio.py
       - name: Create Commit
         run: |
           git add .
@@ -28,4 +26,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr create --title "[Update] $(cat ./data/version.txt)" --body "$(cat ./data/version.txt)" --head update
+          gh pr create --title "[Update] Audio $(cat ./data/version.txt)" --body "$(cat ./data/version.txt)" --head update
