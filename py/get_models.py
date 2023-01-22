@@ -85,7 +85,7 @@ def main():
     # Create directories
     directories = [
         "./assets/spine",
-        "/data",
+        "./data",
         option["path"]["download"]
     ]
     for dir in directories:
