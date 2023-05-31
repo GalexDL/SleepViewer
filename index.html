@@ -189,6 +189,22 @@
             if(isCharacterLoaded)
                 char.scale.x = char.scale.y = option.scale.value;
         }
+	    
+	option.scaleFit.ontouchend = function() {
+	    if(isCharacterLoaded)
+		char.scale.x = char.scale.y = option.scale.value = option.models.value.indexOf("_home") != -1 ? Math.max(app.renderer.height/char.spineData.height, app.renderer.width/char.spineData.width) : Math.min(app.renderer.height/char.spineData.height, app.renderer.width/char.spineData.width);
+	}
+
+	option.scaleHalf.ontouchend = function() {
+	    if(isCharacterLoaded)
+		char.scale.x = char.scale.y = option.scale.value = 0.2;
+	}
+
+	option.scale.onchange = function() {
+	    if(isCharacterLoaded)
+		char.scale.x = char.scale.y = option.scale.value;
+	}
+
         option.autoPos.onchange = function() {
             if(!isCharacterLoaded)
                 return;
