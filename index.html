@@ -296,8 +296,9 @@
 		isCharacterLoaded
 	    ) {
 		option.autoPos.checked = false;
-		char.x = option.x.value = -(canvasX + initMouseX - canMouseX);
-		char.y = option.y.value = -(canvasY + initMouseY - canMouseY);
+		let newScale = -(canvasX + initMouseX - canMouseX) / window.innerWidth;
+		newScale = Math.max(0, Math.min(1, newScale));
+		char.scale.x = char.scale.y = option.scale.value = newScale;
 	    }
 	}
 
