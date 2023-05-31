@@ -1,0 +1,272 @@
+
+CharaP0143_51.png
+size: 2048,2048
+format: RGBA8888
+filter: MipMap,MipMap
+repeat: none
+Body
+  rotate: false
+  xy: 2, 1169
+  size: 688, 878
+  orig: 688, 882
+  offset: 0, 4
+  index: -1
+Body_F
+  rotate: false
+  xy: 571, 1957
+  size: 106, 89
+  orig: 106, 89
+  offset: 0, 0
+  index: -1
+Body_F_Reverse
+  rotate: false
+  xy: 578, 1436
+  size: 111, 89
+  orig: 111, 89
+  offset: 0, 0
+  index: -1
+Body_Shirt_B
+  rotate: false
+  xy: 1735, 2015
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+Body_Shirt_F
+  rotate: 180
+  xy: 2, 566
+  size: 701, 415
+  orig: 701, 415
+  offset: 0, 0
+  index: -1
+Cushion
+  rotate: 270
+  xy: 1105, 803
+  size: 599, 605
+  orig: 599, 605
+  offset: 0, 0
+  index: -1
+Cushion_Reverse
+  rotate: false
+  xy: 691, 1441
+  size: 599, 605
+  orig: 599, 605
+  offset: 0, 0
+  index: -1
+Cushion_Shadow
+  rotate: true
+  xy: 493, 866
+  size: 573, 591
+  orig: 573, 591
+  offset: 0, 0
+  index: -1
+Eff_Base1
+  rotate: false
+  xy: 808, 467
+  size: 469, 455
+  orig: 469, 455
+  offset: 0, 0
+  index: -1
+Eff_Base2
+  rotate: true
+  xy: 1292, 1333
+  size: 713, 528
+  orig: 713, 528
+  offset: 0, 0
+  index: -1
+Eff_Base3
+  rotate: 270
+  xy: 1526, 453
+  size: 515, 520
+  orig: 515, 520
+  offset: 0, 0
+  index: -1
+Eff_Donuts1
+  rotate: false
+  xy: 436, 149
+  size: 284, 251
+  orig: 284, 251
+  offset: 0, 0
+  index: -1
+Eff_Donuts2_1
+  rotate: false
+  xy: 1227, 145
+  size: 294, 258
+  orig: 294, 258
+  offset: 0, 0
+  index: -1
+Eff_Donuts2_2
+  rotate: false
+  xy: 2, 983
+  size: 330, 201
+  orig: 330, 201
+  offset: 0, 0
+  index: -1
+Eff_Donuts3
+  rotate: false
+  xy: 1712, 992
+  size: 316, 301
+  orig: 316, 301
+  offset: 0, 0
+  index: -1
+Fx_Hungry
+  rotate: false
+  xy: 1002, 1370
+  size: 105, 69
+  orig: 105, 69
+  offset: 0, 0
+  index: -1
+Fx_Sleep
+  rotate: false
+  xy: 1771, 1931
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+Hat
+  rotate: false
+  xy: 1523, 195
+  size: 422, 357
+  orig: 422, 357
+  offset: 0, 0
+  index: -1
+Hat_Reverse
+  rotate: 180
+  xy: 2, 245
+  size: 432, 310
+  orig: 432, 310
+  offset: 0, 0
+  index: -1
+L_ArmD1
+  rotate: 180
+  xy: 985, 137
+  size: 240, 245
+  orig: 240, 245
+  offset: 0, 0
+  index: -1
+L_ArmD2
+  rotate: false
+  xy: 334, 1010
+  size: 146, 158
+  orig: 146, 158
+  offset: 0, 0
+  index: -1
+L_Eye_Close
+  rotate: false
+  xy: 1380, 2004
+  size: 62, 16
+  orig: 62, 16
+  offset: 0, 0
+  index: -1
+L_Eye_Smile
+  rotate: false
+  xy: 1791, 1910
+  size: 65, 19
+  orig: 65, 19
+  offset: 0, 0
+  index: -1
+L_LegC
+  rotate: true
+  xy: 1845, 84
+  size: 237, 201
+  orig: 237, 201
+  offset: 0, 0
+  index: -1
+Mouth_Close
+  rotate: false
+  xy: 1292, 1921
+  size: 102, 31
+  orig: 102, 31
+  offset: 0, 0
+  index: -1
+Mouth_Open
+  rotate: false
+  xy: 2, 1451
+  size: 87, 83
+  orig: 87, 83
+  offset: 0, 0
+  index: -1
+Mouth_Smile
+  rotate: false
+  xy: 1888, 1968
+  size: 99, 78
+  orig: 99, 78
+  offset: 0, 0
+  index: -1
+Mouth_Surprise
+  rotate: false
+  xy: 1292, 1954
+  size: 86, 92
+  orig: 86, 92
+  offset: 0, 0
+  index: -1
+Mouth_eat
+  rotate: false
+  xy: 1888, 1917
+  size: 129, 49
+  orig: 129, 49
+  offset: 0, 0
+  index: -1
+R_ArmD1
+  rotate: true
+  xy: 78, 148
+  size: 187, 259
+  orig: 187, 263
+  offset: 0, 0
+  index: -1
+R_ArmD2
+  rotate: false
+  xy: 722, 195
+  size: 315, 206
+  orig: 315, 206
+  offset: 0, 0
+  index: -1
+R_Eye_Close
+  rotate: false
+  xy: 1380, 2022
+  size: 80, 24
+  orig: 80, 24
+  offset: 0, 0
+  index: -1
+R_Eye_Smile
+  rotate: false
+  xy: 2, 2019
+  size: 81, 27
+  orig: 81, 27
+  offset: 0, 0
+  index: -1
+R_LegC
+  rotate: false
+  xy: 1287, 596
+  size: 237, 223
+  orig: 237, 223
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 199, 109
+  size: 642, 38
+  orig: 642, 38
+  offset: 0, 0
+  index: -1
+Sweat
+  rotate: false
+  xy: 1989, 1981
+  size: 23, 65
+  orig: 23, 65
+  offset: 0, 0
+  index: -1
+skill/kizi
+  rotate: true
+  xy: 1817, 1295
+  size: 614, 230
+  orig: 637, 267
+  offset: 13, 15
+  index: -1
+skill/kizi2
+  rotate: 180
+  xy: 419, 403
+  size: 1121, 147
+  orig: 1121, 147
+  offset: 0, 0
+  index: -1
