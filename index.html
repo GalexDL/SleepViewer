@@ -211,40 +211,80 @@
         option.export.onclick = function() {
             exportAnimation(FPS=parseInt(option.FPS.value))
         }
-        // Draggable Canvas
-        let canvasScreen = document.getElementById("screen")
-        let isDragging = false;
-        let canMouseX, canMouseY;
-        let initMouseX, initMouseY;
-        let canvasX, canvasY;
-        canvasScreen.onmousedown = function(e) {
-            // canvasX = -canvasScreen.offsetLeft;
-            // canvasY = -canvasScreen.offsetTop;
-            canvasX = -char.x;
-            canvasY = -char.y;
-            initMouseX = parseInt(e.clientX-canvasX)
-            initMouseY = parseInt(e.clientY-canvasY)
+	// Draggable Canvas
+	let canvasScreen = document.getElementById("screen");
+	let isDragging = false;
+	let canMouseX, canMouseY;
+	let initMouseX, initMouseY;
+	let canvasX, canvasY;
 
-            isDragging = true;
-        }
-        canvasScreen.onmouseup = function(e) {
-            isDragging = false;
-        }
-        canvasScreen.onmouseout = function(e) {
-            isDragging = false;
-        }
-        canvasScreen.onmousemove = function(e) {
-            canMouseX = parseInt(e.clientX-canvasX)
-            canMouseY = parseInt(e.clientY-canvasY)
-            if(isDragging && (initMouseX - canMouseX != 0 || initMouseY - canMouseY != 0) && isCharacterLoaded) {
-                option.autoPos.checked = false;
-                // console.log(initMouseX - canMouseX, initMouseY - canMouseY)
-                char.x = option.x.value = -(canvasX + initMouseX - canMouseX); 
-                char.y = option.y.value = -(canvasY + initMouseY - canMouseY);
-                // canvasScreen.style.left = -(canvasX + initMouseX - canMouseX) + "px";
-                // canvasScreen.style.top = -(canvasY + initMouseY - canMouseY) + "px";
-            }
-        }
+	canvasScreen.addEventListener("mousedown", handleMouseDown);
+	canvasScreen.addEventListener("mouseup", handleMouseUp);
+	canvasScreen.addEventListener("mouseout", handleMouseOut);
+	canvasScreen.addEventListener("mousemove", handleMouseMove);
+
+	canvasScreen.addEventListener("touchstart", handleTouchStart);
+	canvasScreen.addEventListener("touchend", handleTouchEnd);
+	canvasScreen.addEventListener("touchmove", handleTouchMove);
+
+	function handleMouseDown(e) {
+	    e.preventDefault();
+	    canvasX = -char.x;
+	    canvasY = -char.y;
+	    initMouseX = parseInt(e.clientX - canvasX);
+	    initMouseY = parseInt(e.clientY - canvasY);
+	    isDragging = true;
+	}
+
+	function handleMouseUp(e) {
+	    isDragging = false;
+	}
+
+	function handleMouseOut(e) {
+	    isDragging = false;
+	}
+
+	function handleMouseMove(e) {
+	    canMouseX = parseInt(e.clientX - canvasX);
+	    canMouseY = parseInt(e.clientY - canvasY);
+	    if (
+		isDragging &&
+		(initMouseX - canMouseX !== 0 || initMouseY - canMouseY !== 0) &&
+		isCharacterLoaded
+	    ) {
+		option.autoPos.checked = false;
+		char.x = option.x.value = -(canvasX + initMouseX - canMouseX);
+		char.y = option.y.value = -(canvasY + initMouseY - canMouseY);
+	    }
+	}
+
+	function handleTouchStart(e) {
+	    e.preventDefault();
+	    canvasX = -char.x;
+	    canvasY = -char.y;
+	    initMouseX = parseInt(e.touches[0].clientX - canvasX);
+	    initMouseY = parseInt(e.touches[0].clientY - canvasY);
+	    isDragging = true;
+	}
+
+	function handleTouchEnd(e) {
+	    isDragging = false;
+	}
+
+	function handleTouchMove(e) {
+	    canMouseX = parseInt(e.touches[0].clientX - canvasX);
+	    canMouseY = parseInt(e.touches[0].clientY - canvasY);
+	    if (
+		isDragging &&
+		(initMouseX - canMouseX !== 0 || initMouseY - canMouseY !== 0) &&
+		isCharacterLoaded
+	    ) {
+		option.autoPos.checked = false;
+		char.x = option.x.value = -(canvasX + initMouseX - canMouseX);
+		char.y = option.y.value = -(canvasY + initMouseY - canMouseY);
+	    }
+	}
+
         // Resize event
         window.addEventListener('resize', function(event){
             canvasScreen.width = window.innerWidth;
