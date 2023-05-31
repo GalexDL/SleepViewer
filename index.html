@@ -187,7 +187,7 @@
         }
         option.scale.onchange = function() {
             if(isCharacterLoaded)
-                char.scale.x = char.scale.y = option.scale.value;
+                char.scale.x = char.scale.y = Math.max(option.scale.value, 0);
         }
 	    
 	option.scaleFit.ontouchend = function() {
@@ -324,45 +324,71 @@
         // Start
         reCanvas();
         loadChar(option.models.value);
-  
-        let lastPinchDistance = null;
-
-        canvasScreen.addEventListener("touchstart", handleTouchStart);
-        canvasScreen.addEventListener("touchmove", handleTouchMove);
-        canvasScreen.addEventListener("touchend", handleTouchEnd);
-
-        function handleTouchStart(e) {
-            if (e.touches.length >= 2) {
-                const touch1 = e.touches[0];
-                const touch2 = e.touches[1];
-                const dx = touch1.clientX - touch2.clientX;
-                const dy = touch1.clientY - touch2.clientY;
-                lastPinchDistance = Math.sqrt(dx * dx + dy * dy);
-            }
-        }
-
-        function handleTouchMove(e) {
-            if (e.touches.length >= 2) {
-                const touch1 = e.touches[0];
-                const touch2 = e.touches[1];
-                const dx = touch1.clientX - touch2.clientX;
-                const dy = touch1.clientY - touch2.clientY;
-                const pinchDistance = Math.sqrt(dx * dx + dy * dy);
-
-                if (lastPinchDistance) {
-                    const scaleDelta = (pinchDistance - lastPinchDistance) * 0.01; // Adjust the sensitivity as needed
-                    option.scale.value = parseFloat(option.scale.value) + scaleDelta;
-                    char.scale.x = char.scale.y = option.scale.value;
-                }
-
-                lastPinchDistance = pinchDistance;
-            }
-        }
-
-        function handleTouchEnd(e) {
-            lastPinchDistance = null;
-        }
 	    
+	// Enable pinch-to-zoom
+	let lastPinchDistance = 0;
+	let initialScale = 1;
+
+	canvas.addEventListener("touchstart", function(event) {
+	    if (event.touches.length === 2) {
+		// Calculate initial distance between the two touches
+		const touch1 = event.touches[0];
+		const touch2 = event.touches[1];
+		lastPinchDistance = Math.hypot(touch2.pageX - touch1.pageX, touch2.pageY - touch1.pageY);
+		initialScale = char.scale.x;
+	    }
+	});
+
+	canvas.addEventListener("touchmove", function(event) {
+	    if (event.touches.length === 2) {
+		// Calculate new distance between the two touches
+		const touch1 = event.touches[0];
+		const touch2 = event.touches[1];
+		const newPinchDistance = Math.hypot(touch2.pageX - touch1.pageX, touch2.pageY - touch1.pageY);
+
+		// Calculate scale factor based on the pinch distance change
+		const scaleChange = newPinchDistance - lastPinchDistance;
+		const scaleFactor = 1 + (scaleChange / 1000); // Adjust the division value to control the sensitivity of zooming
+
+		// Apply the new scale factor
+		char.scale.x = char.scale.y = Math.max(initialScale * scaleFactor, 0);
+
+		lastPinchDistance = newPinchDistance;
+	    }
+	});
+
+	// Enable touch screen dragging
+	let lastTouchPosition = { x: 0, y: 0 };
+	let isDragging = false;
+
+	canvas.addEventListener("touchstart", function(event) {
+	    if (event.touches.length === 1) {
+		const touch = event.touches[0];
+		lastTouchPosition.x = touch.pageX;
+		lastTouchPosition.y = touch.pageY;
+		isDragging = true;
+	    }
+	});
+
+	canvas.addEventListener("touchmove", function(event) {
+	    if (isDragging && event.touches.length === 1) {
+		const touch = event.touches[0];
+		const deltaX = touch.pageX - lastTouchPosition.x;
+		const deltaY = touch.pageY - lastTouchPosition.y;
+
+		// Update the position of the character or canvas here
+		// Example: char.x += deltaX; char.y += deltaY;
+
+		lastTouchPosition.x = touch.pageX;
+		lastTouchPosition.y = touch.pageY;
+	    }
+	});
+
+	canvas.addEventListener("touchend", function(event) {
+	    isDragging = false;
+	});
+
+
     </script>
     <!-- Exporter -->
     <script src="js/canvas-exporter.js"></script>
