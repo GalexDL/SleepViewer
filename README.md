@@ -4,4 +4,4 @@ For viewing Pokemon Cafe Remix Sprites.
 - View Animations
 - Export Animation (Mp4/WEBM)
 
-- Mobile Drag not supported rn
+- Mobile is not fully supported atm
