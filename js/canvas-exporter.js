@@ -3,6 +3,7 @@ function isMobileDevice() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
+
 function exportAnimation(FPS = 60) {
   let exportCanvas = document.createElement("canvas");
   exportCanvas.id = "export-canvas";
@@ -29,74 +30,63 @@ function exportAnimation(FPS = 60) {
       appExport.stage.addChild(exportChar);
 
       // Export Section
-      let canvasStream = exportCanvas.captureStream(FPS); // default to 60
-      let mediaRecorder = new MediaRecorder(canvasStream);
-      let gifChunks = [];
-
-      mediaRecorder.ondataavailable = function (e) {
-        gifChunks.push(e.data);
-      };
-
-      mediaRecorder.onstop = function (e) {
-        let exportType = option.exportType.value;
-
-        if (exportType === "image/gif") {
-          let gif = new GIF({
-            workers: 2,
-            quality: 10,
-          });
-
-          gif.on("finished", function (blob) {
-            let gifURL = URL.createObjectURL(blob);
-            exportVideo.src = gifURL;
-          });
-
-          let frames = [];
-          for (let i = 0; i < gifChunks.length; i++) {
-            let img = new Image();
-            img.src = URL.createObjectURL(gifChunks[i]);
-            frames.push(img);
-          }
-
-          frames.forEach(function (frame) {
-            gif.addFrame(frame, { delay: 1000 / FPS });
-          });
-
-          gif.render();
-        } else {
-          let blob = new Blob(gifChunks, { type: exportType });
-          let videoURL = URL.createObjectURL(blob);
-          exportVideo.src = videoURL;
-        }
-
-        gifChunks = [];
-      };
+      let frames = []; // Array to store frames
 
       // Get Animation Length
       let animLength = 0;
-      for (let i in char.spineData.animations) {
-        if (char.spineData.animations[i].name === option.animations.value) {
+      for (var i in char.spineData.animations) {
+        if (char.spineData.animations[i].name == option.animations.value) {
           animLength = char.spineData.animations[i].duration;
           break;
         }
       }
 
-      // Modal Popup
+      // Capture frames at specified intervals
+      let interval = 1000 / FPS; // Interval in milliseconds
+      let currentTime = 0;
+
+      function captureFrame() {
+        let base64Data = exportCanvas.toDataURL("image/png");
+        frames.push(base64Data);
+
+        currentTime += interval;
+        if (currentTime < animLength * 1000) {
+          setTimeout(captureFrame, interval);
+        } else {
+          // Render frames as GIF using gifshot.js
+          gifshot.createGIF(
+            {
+              images: frames,
+              gifWidth: exportCanvas.width,
+              gifHeight: exportCanvas.height,
+            },
+            function (obj) {
+              if (!obj.error) {
+                let gifImage = obj.image;
+                let blob = dataURItoBlob(gifImage);
+                let videoURL = URL.createObjectURL(blob);
+                exportVideo.src = videoURL;
+              }
+            }
+          );
+        }
+      }
+
+      // Start capturing frames
+      captureFrame();
+
+      //Modal Popup
       document.getElementById("rendering").style.display = "block";
       document.getElementById("complete").style.display = "none";
       UIkit.modal(document.getElementById("modal-exporter")).show();
-
       // Progressbar
       document.getElementById("export-progress").value = 0;
       let progress = setInterval(function () {
         document.getElementById("export-progress").value += 1;
       }, animLength * 10);
 
-      // Record
-      mediaRecorder.start();
+     // Free Resources
       setTimeout(function () {
-        mediaRecorder.stop();
-        // Free Resources
         appExport.stage.children.pop();
         appExport.loader.resources = {};
         exportCanvas.remove();
@@ -108,6 +98,19 @@ function exportAnimation(FPS = 60) {
         document.getElementById("result").appendChild(exportVideo);
       }, animLength * 1000);
     });
+}
+
+// Utility function to convert data URI to Blob
+function dataURItoBlob(dataURI) {
+  var byteString = atob(dataURI.split(",")[1]);
+  var mimeString = dataURI.split(",")[0].split(":")[1].split(";")[0];
+  var ab = new ArrayBuffer(byteString.length);
+  var ia = new Uint8Array(ab);
+  for (var i = 0; i < byteString.length; i++) {
+    ia[i] = byteString.charCodeAt(i);
+  }
+  var blob = new Blob([ab], { type: mimeString });
+  return blob;
 }
 
 
