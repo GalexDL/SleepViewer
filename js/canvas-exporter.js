@@ -77,14 +77,16 @@ function exportAnimation(FPS = 60) {
         document.getElementById("complete").style.display = "block";
         document.getElementById("result").appendChild(exportVideo);
       }, animLength * 1000);
-    let downloadButton = document.createElement("button");
-    downloadButton.id = "download-button";
-    downloadButton.textContent = "Download Video";
-    document.getElementById("result").appendChild(downloadButton);
-    downloadButton.addEventListener("click", function () {
-      downloadVideo(exportVideo.src);
     });
+  let downloadButton = document.createElement("button");
+  downloadButton.id = "download-button";
+  downloadButton.textContent = "Download Video";
+  document.getElementById("result").appendChild(downloadButton);
+  downloadButton.addEventListener("click", function () {
+    downloadVideo(exportVideo.src);
+  });
 }
+
 
 function downloadVideo(videoURL) {
   const a = document.createElement("a");
