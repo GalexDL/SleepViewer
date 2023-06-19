@@ -27,18 +27,25 @@ function exportAnimation(FPS = 60) {
       // Export Section
       let videoStream = exportCanvas.captureStream(FPS); // Default to 60
     
-      // Encoding captured frames into MP4 format using whammy.js
-      let videoData = [];
-      let mediaRecorder = new MediaRecorder(videoStream);
-      mediaRecorder.ondataavailable = function (e) {
-        videoData.push(e.data);
-      };
-      mediaRecorder.onstop = function (e) {
-        let blob = new Blob(videoData, { type: 'video/mp4' });
-        videoData = [];
-        let videoURL = URL.createObjectURL(blob);
+      // Create an instance of FFmpeg class
+      const ffmpeg = createFFmpeg({
+        log: true,
+      });
+    
+      // Initialize FFmpeg
+      const initializeFFmpeg = async () => {
+        await ffmpeg.load();
+        await ffmpeg.write("video.webm", videoStream);
+        await ffmpeg.run("-i", "video.webm", "-c:v", "copy", "video.mp4");
+        const data = ffmpeg.read("video.mp4");
+        const videoBlob = new Blob([data.buffer], { type: "video/mp4" });
+        const videoURL = URL.createObjectURL(videoBlob);
         exportVideo.src = videoURL;
       };
+    
+      // Start FFmpeg initialization
+      initializeFFmpeg();
+          
       // Eyow
       let videoStream = exportCanvas.captureStream(FPS); //default to 60
       let mediaRecorder = new MediaRecorder(videoStream);
