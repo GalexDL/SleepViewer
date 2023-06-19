@@ -26,10 +26,9 @@ function exportAnimation(FPS = 60) {
 
       // Export Section
           
+
       let videoStream = exportCanvas.captureStream(FPS); //default to 60
-      let mediaRecorder = new MediaRecorder(videoStream, {
-        mimeType: option.exportType.value,
-      });
+      let mediaRecorder = new MediaRecorder(videoStream);
       //EYOW
       //EOOOOW
       let chunks = [];
