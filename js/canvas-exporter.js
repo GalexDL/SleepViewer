@@ -26,7 +26,6 @@ function exportAnimation(FPS = 60) {
 
       // Export Section
           
-
       let videoStream = exportCanvas.captureStream(FPS); //default to 60
       let mediaRecorder = new MediaRecorder(videoStream);
       //EYOW
@@ -101,7 +100,4 @@ function downloadVideo(videoURL) {
 // char.state.setAnimation(0, "Idle_01", false);
 // mediaRecorder.start();
 // setTimeout(function (){ mediaRecorder.stop(); }, 4000);
-
-
-  };
 
