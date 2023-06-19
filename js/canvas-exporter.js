@@ -25,9 +25,12 @@ function exportAnimation(FPS = 60) {
       appExport.stage.addChild(exportChar);
 
       // Export Section
-      let videoStream = exportCanvas.captureStream(FPS); // Default to 60
-    
-      // Create an instance of FFmpeg class
+          
+
+      let videoStream = exportCanvas.captureStream(FPS); //default to 60
+      let mediaRecorder = new MediaRecorder(videoStream);
+      //EYOW
+
       const ffmpeg = createFFmpeg({
         log: true,
       });
@@ -45,11 +48,8 @@ function exportAnimation(FPS = 60) {
     
       // Start FFmpeg initialization
       initializeFFmpeg();
-          
-      // Eyow
-      let videoStream = exportCanvas.captureStream(FPS); //default to 60
-      let mediaRecorder = new MediaRecorder(videoStream);
 
+      //EOOOOW
       let chunks = [];
       mediaRecorder.ondataavailable = function (e) {
         chunks.push(e.data);
