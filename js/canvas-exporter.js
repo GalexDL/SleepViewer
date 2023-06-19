@@ -99,3 +99,19 @@ function downloadVideo(videoURL) {
 // char.state.setAnimation(0, "Idle_01", false);
 // mediaRecorder.start();
 // setTimeout(function (){ mediaRecorder.stop(); }, 4000);
+
+  let videoStream = exportCanvas.captureStream(FPS); // Default to 60
+
+  // Encoding captured frames into MP4 format using whammy.js
+  let videoData = [];
+  let mediaRecorder = new MediaRecorder(videoStream);
+  mediaRecorder.ondataavailable = function (e) {
+    videoData.push(e.data);
+  };
+  mediaRecorder.onstop = function (e) {
+    let blob = new Blob(videoData, { type: 'video/mp4' });
+    videoData = [];
+    let videoURL = URL.createObjectURL(blob);
+    exportVideo.src = videoURL;
+  };
+
