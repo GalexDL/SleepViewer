@@ -28,15 +28,14 @@ function exportAnimation(FPS = 60) {
           
 
       let videoStream = exportCanvas.captureStream(FPS); //default to 60
-      let mediaRecorder = new MediaRecorder(videoStream, {
-        mimeType: option.exportType.value,
-      });
+      let mediaRecorder = new MediaRecorder(videoStream);
       //EYOW
       //EOOOOW
       let chunks = [];
       mediaRecorder.ondataavailable = function (e) {
         chunks.push(e.data);
       };
+
       mediaRecorder.onstop = function (e) {
         let blob = new Blob(chunks, { type: option.exportType.value });
         chunks = [];
@@ -46,7 +45,6 @@ function exportAnimation(FPS = 60) {
       mediaRecorder.ondataavailable = function (e) {
         chunks.push(e.data);
       };
-
       // Get Animation Length
       let animLength = 0;
       for (var i in char.spineData.animations) {
