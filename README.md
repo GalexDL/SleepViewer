@@ -1,5 +1,5 @@
 # Pokemon Sleep Sprite Viewer
-For viewing Pokemon Cafe Remix Sprites.
+For viewing Pokemon Sleep Sprites.
 
 - View Animations
 - Export Animation (Mp4/WEBM)
