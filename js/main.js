@@ -127,6 +127,30 @@ function onAssetsLoaded(model) {
     model.lastIndexOf(".")
   );
   setSkinByName(initialSkinName);
+
+    // Get the available skins
+  const skins = Object.keys(char.spineData.skins);
+    
+    // Get the select element for skins from the HTML
+  const skinSelect = document.getElementById("optionSkins");
+    
+    // Clear existing options
+  skinSelect.innerHTML = "";
+    
+    // Populate the select element with skin options
+  skins.forEach((skin) => {
+    const option = document.createElement("option");
+    option.value = skin;
+    option.textContent = skin;
+    skinSelect.appendChild(option);
+   });
+    
+    // Add a change event listener to the skin select element
+   skinSelect.addEventListener("change", () => {
+      const selectedSkin = skinSelect.value;
+      setSkinByName(selectedSkin);
+   });
+
 }
 
 function setSkinByName(skinName) {
