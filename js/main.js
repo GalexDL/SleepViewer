@@ -30,7 +30,11 @@ function loadChar(model, skin") {
         }
         audioList = [];
     }
-
+    // Set skin
+    if (skin && char.skeleton.data.findSkin(skin)) {
+        char.skeleton.setSkinByName(skin);
+        char.skeleton.setSlotsToSetupPose();
+    }
     // load new spine
     app.loader
         .add('char', `./${model}`)
