@@ -16,7 +16,7 @@ function reCanvas() {
     );
 }
 
-function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
+function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel",skin) {
     isCharacterLoaded = false;
     // remove previous spine
     if(app.stage.children.length > 0) {
@@ -29,6 +29,13 @@ function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
             audioList[i].stop();
         }
         audioList = [];
+    }
+    char.skeleton.setSkinByName(skin);
+    for (const skin of char.spineData.skins) {
+      let opt = document.createElement("option");
+      opt.value = skin.name;
+      opt.innerHTML = skin.name;
+      option.skins.appendChild(opt);
     }
 
     // load new spine
