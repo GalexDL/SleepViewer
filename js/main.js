@@ -16,7 +16,7 @@ function reCanvas() {
     );
 }
 
-function loadChar(model, skin") {
+function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
     isCharacterLoaded = false;
     // remove previous spine
     if(app.stage.children.length > 0) {
@@ -30,6 +30,7 @@ function loadChar(model, skin") {
         }
         audioList = [];
     }
+
     // load new spine
     app.loader
         .add('char', `./${model}`)
@@ -46,14 +47,6 @@ function onAssetsLoaded(loader,res) {
 
     char = new PIXI.spine.Spine(res.char.spineData);
 
-    // Set skin
-    if (skin && char.skeleton.data.findSkin(skin)) {
-        char.skeleton.setSkinByName(skin);
-        char.skeleton.setSlotsToSetupPose();
-    }
-    // Add to main canvas
-    app.stage.addChild(char);
-    isCharacterLoaded = true;
     // console.log(char)
     // console.log(char.spineData.height)
     // console.log(char.spineData.width)
