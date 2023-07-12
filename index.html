@@ -166,16 +166,7 @@
             opt.innerHTML = i;
             option.models.appendChild(opt);
         }
-	// Add this function to your code
-	// Modify the setSkinByName function
-	function setSkinByName(skinName) {
-	  if (char && char.spineData && char.spineData.skeletonData) {
-	    char.skeleton.setSkin(null);
-	    char.skeleton.setSkinByName(skinName);
-	    char.skeleton.setSlotsToSetupPose();
-	    char.state.apply(char.skeleton);
-	  }
-	}
+
         // Events
         option.models.onchange = function() {
             localStorage.setItem("blue-archive-res-model", this.value);
@@ -183,8 +174,6 @@
         }
         option.animations.onchange = function() {
             playAnimation(this.value);
-	    // Call setSkinByName function with the selected animation as the skin name
-	    setSkinByName(this.value);
         }
         option.loop.onchange = function() {
             localStorage.setItem("blue-archive-res-loop", this.checked);
