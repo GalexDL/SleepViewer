@@ -16,7 +16,7 @@ function reCanvas() {
     );
 }
 
-function loadChar(model) {
+function loadChar(model, skin) {
     isCharacterLoaded = false;
     // remove previous spine
     if(app.stage.children.length > 0) {
