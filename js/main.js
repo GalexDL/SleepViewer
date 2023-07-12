@@ -16,7 +16,7 @@ function reCanvas() {
     );
 }
 
-function loadChar(model) {
+function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
     isCharacterLoaded = false;
     // remove previous spine
     if(app.stage.children.length > 0) {
@@ -44,32 +44,13 @@ function onAssetsLoaded(loader,res) {
         }
         audioList = [];
     }
-    const atlasUrl = res.char.spineData.page;
-    const atlasPath = atlasUrl.substr(0, atlasUrl.lastIndexOf('/') + 1);
 
-    const spineAtlas = new PIXI.spine.core.TextureAtlas(loader.resources[atlasUrl].data, (line, callback) => {
-        callback(PIXI.BaseTexture.from(line, { resourceOptions: { scale: 1 } }));
-    });
-    const spineAtlasLoader = new PIXI.spine.core.AtlasAttachmentLoader(spineAtlas);
-    const spineJsonParser = new PIXI.spine.core.SkeletonJson(spineAtlasLoader);
-    const skeletonData = spineJsonParser.readSkeletonData(res.char.spineData);
-    
     char = new PIXI.spine.Spine(res.char.spineData);
 
     // console.log(char)
     // console.log(char.spineData.height)
     // console.log(char.spineData.width)
-    
-    // Set the initial skin
-    const initialSkin = getSelectedSkin(); // Get the initially selected skin
-    if (initialSkin) {
-        char.skeleton.setSkinByName(initialSkin);
-        char.skeleton.setSlotsToSetupPose();
-    }
-    // Add to main canvas
-    app.stage.addChild(char);
-    isCharacterLoaded = true;
-    
+
     // Scaler
     char.scale.x = 0.5;
     char.scale.y = 0.5;
@@ -146,15 +127,6 @@ function onAssetsLoaded(loader,res) {
     //Add to main canvas
     app.stage.addChild(char);
     isCharacterLoaded = true;
-}
-
-function getSelectedSkin() {
-    const selectedModel = option.models.value;
-    const skinIndex = selectedModel.lastIndexOf('/');
-    if (skinIndex !== -1) {
-        return selectedModel.substring(skinIndex + 1, selectedModel.lastIndexOf('.'));
-    }
-    return null; // If no skin is selected
 }
 
 function playAnimation(name) {
