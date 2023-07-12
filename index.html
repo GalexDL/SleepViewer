@@ -57,13 +57,8 @@
         <div class="uk-offcanvas-bar">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h3>Cafe Remix Sprites</h3>
+            <h3>Sleep Sprites</h3>
             <p>Select Pokemon</p>
-	    <select class="uk-select" id="categoryDropdown">
-		    <option value="Bulbasaur">Bulbasaur</option>
-		    <option value="Guy">Guy</option>
-	    </select>
-	
 	    <p>Select Model</p>
 	    <select class="uk-select" id="model-dropdown">
 	    </select>
@@ -168,48 +163,13 @@
 
         // Init models
         let dataModels = JSON.parse(httpGet("./data/models.json"))
-
-	// Get dropdown elements
-	let categoryDropdown = document.getElementById("category-dropdown");
-	let modelDropdown = document.getElementById("model-dropdown");
 	    
-	// Add event listener to category dropdown
-	categoryDropdown.addEventListener("change", function() {
-	  // Clear the model dropdown
-	  modelDropdown.innerHTML = "";
-	
-	  // Get the selected category
-	  let selectedCategory = categoryDropdown.value;
-	
-	  // Filter models based on the selected category
-	  let filteredModels = Object.keys(dataModels).filter(function(key) {
-	    return key.startsWith(selectedCategory);
-	  });
-	
-	  // Populate the model dropdown
-	  filteredModels.forEach(function(model) {
-	    let opt = document.createElement("option");
-	    opt.value = dataModels[model];
-	    opt.innerHTML = model;
-	    modelDropdown.appendChild(opt);
-	  });
-	});
-	
-	// Populate the category dropdown
-	for (var i in dataModels) {
-	  let category = i.split(/[0-9]/)[0]; // Extract the category from the model name
-	  let opt = document.createElement("option");
-	  opt.value = category;
-	  opt.innerHTML = category;
-	  categoryDropdown.appendChild(opt);
-	}
-	    
-        /*for(var i in dataModels) {
+        for(var i in dataModels) {
             let opt = document.createElement("option");
             opt.value = dataModels[i];
             opt.innerHTML = i;
             option.models.appendChild(opt);
-        }*/
+        }
 
         // Events
         option.models.onchange = function() {
