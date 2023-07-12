@@ -16,7 +16,7 @@ function reCanvas() {
     );
 }
 
-function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
+function loadChar(model) {
     isCharacterLoaded = false;
     // remove previous spine
     if(app.stage.children.length > 0) {
@@ -127,6 +127,10 @@ function onAssetsLoaded(loader,res) {
     //Add to main canvas
     app.stage.addChild(char);
     isCharacterLoaded = true;
+
+     // Call setSkinByName function with the selected model as the initial skin name
+    const initialSkinName = model.substring(model.lastIndexOf("/") + 1, model.lastIndexOf("."));
+    setSkinByName(initialSkinName);
 }
 
 function playAnimation(name) {
