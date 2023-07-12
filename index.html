@@ -168,12 +168,10 @@
         }
 
         // Events
-	option.models.onchange = function () {
-	    const selectedModel = this.value;
-	    localStorage.setItem("blue-archive-res-model", selectedModel);
-	    loadChar(selectedModel);
-	}
-
+        option.models.onchange = function() {
+            localStorage.setItem("blue-archive-res-model", this.value);
+            loadChar(this.value)
+        }
         option.animations.onchange = function() {
             playAnimation(this.value);
         }
@@ -234,20 +232,6 @@
         option.export.onclick = function() {
             exportAnimation(FPS=parseInt(option.FPS.value))
         }
-	
-	if (localStorage["blue-archive-res-model"]) {
-	    option.models.value = localStorage["blue-archive-res-model"];
-	    const selectedModel = option.models.value;
-	    updateSkinOptions(selectedModel);
-	    const selectedSkin = getSelectedSkin();
-	    loadChar(selectedModel);
-	} else {
-	    option.models.value = option.models.children[0].value;
-	    const selectedModel = option.models.value;
-	    updateSkinOptions(selectedModel);
-	    const selectedSkin = getSelectedSkin();
-	    loadChar(selectedModel);
-	}
 	// Draggable Canvas
 	let canvasScreen = document.getElementById("screen");
 	let isDragging = false;
