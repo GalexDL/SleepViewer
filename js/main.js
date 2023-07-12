@@ -37,14 +37,18 @@ function loadChar(model, skin) {
         .load(onAssetsLoaded);
 }
 
-function onAssetsLoaded(loader,res) {
+function onAssetsLoaded(loader,res,skin) {
     if(audioList.length != 0) {
         for(var i in audioList) {
             audioList[i].stop();
         }
         audioList = [];
     }
-
+    // Set skin
+    if (skin && char.skeleton.data.findSkin(skin)) {
+        char.skeleton.setSkinByName(skin);
+        char.skeleton.setSlotsToSetupPose();
+    }
     char = new PIXI.spine.Spine(res.char.spineData);
 
     // console.log(char)
