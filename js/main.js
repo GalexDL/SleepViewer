@@ -16,7 +16,7 @@ function reCanvas() {
     );
 }
 
-function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
+function loadChar(model, skin") {
     isCharacterLoaded = false;
     // remove previous spine
     if(app.stage.children.length > 0) {
