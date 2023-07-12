@@ -145,3 +145,16 @@ function playAnimation(name) {
 
     char.state.setAnimation(0, name, option.loop.checked);
 }
+// Initialize option object
+const option = {
+  models: document.getElementById("optionModels"),
+  animations: document.getElementById("optionAnimations"),
+  loop: document.getElementById("optionLoop"),
+  talkSound: document.getElementById("optionTalkSound"),
+  scaleFit: document.getElementById("optionScaleFit"),
+  scaleHalf: document.getElementById("optionScaleHalf"),
+  scale: document.getElementById("optionScale"),
+  autoPos: document.getElementById("optionAutoPos"),
+  x: document.getElementById("optionX"),
+  y: document.getElementById("optionY"),
+};
