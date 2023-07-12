@@ -61,9 +61,6 @@
             <p>Select/Type Pokemon</p>
             <select class="uk-select" id="optionModels">
             </select>
-	    <p>Select Skin</p>
-	    <select class="uk-select" id="optionSkins">
-	    </select>
             <p>Select Animation</p>
             <select class="uk-select" id="optionAnimations">
             </select>
@@ -171,18 +168,10 @@
         }
 
         // Events
-	option.models.onchange = function () {
-	    const selectedModel = this.value;
-	    localStorage.setItem("blue-archive-res-model", selectedModel);
-	    updateSkinOptions(selectedModel);
-	    const selectedSkin = option.skins.value; // Get the initially selected skin
-	    loadChar(selectedModel, selectedSkin);
-	}
-	option.skins.onchange = function () {
-	    const selectedModel = option.models.value;
-	    const selectedSkin = this.value;
-	    loadChar(selectedModel, selectedSkin);
-	}
+        option.models.onchange = function() {
+            localStorage.setItem("blue-archive-res-model", this.value);
+            loadChar(this.value)
+        }
         option.animations.onchange = function() {
             playAnimation(this.value);
         }
@@ -258,20 +247,6 @@
 	canvasScreen.addEventListener("touchstart", handleTouchStart);
 	canvasScreen.addEventListener("touchend", handleTouchEnd);
 	canvasScreen.addEventListener("touchmove", handleTouchMove);
-	    
-	function updateSkinOptions(model) {
-	    const modelKey = model.split('.')[0]; // Remove file extension from model name
-	    const skins = dataModels[modelKey].skins;
-	    option.skins.innerHTML = ""; // Clear existing options
-	
-	    for (var i = 0; i < skins.length; i++) {
-	        const skin = skins[i];
-	        let opt = document.createElement("option");
-	        opt.value = skin;
-	        opt.innerHTML = skin;
-	        option.skins.appendChild(opt);
-	    }
-	}
 
 	function handleMouseDown(e) {
 	    e.preventDefault();
