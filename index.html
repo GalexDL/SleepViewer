@@ -160,12 +160,17 @@
         // Init models
         let dataModels = JSON.parse(httpGet("./data/models.json"))
 	    
-        for(var i in dataModels) {
-            let opt = document.createElement("option");
-            opt.value = dataModels[i];
-            opt.innerHTML = i;
-            option.models.appendChild(opt);
-        }
+	// Add a dropdown box to select the spine skin
+	let skinSelect = document.createElement("select");
+	skinSelect.id = "optionSkin";
+	option.models.appendChild(skinSelect);
+	
+	for (var i in dataModels) {
+	    let opt = document.createElement("option");
+	    opt.value = dataModels[i];
+	    opt.innerHTML = i;
+	    skinSelect.appendChild(opt);
+	}
 
         // Events
         option.models.onchange = function() {
@@ -209,7 +214,10 @@
 	    if(isCharacterLoaded)
 		char.scale.x = char.scale.y = option.scale.value;
 	}
-
+	option.skin.onchange = function() {
+	    localStorage.setItem("blue-archive-res-skin", this.value);
+	    loadChar(option.models.value, option.skin.value);
+	}
         option.autoPos.onchange = function() {
             if(!isCharacterLoaded)
                 return;
@@ -308,24 +316,25 @@
 	}
 
         // Resize event
-        window.addEventListener('resize', function(event){
-            canvasScreen.width = window.innerWidth;
-            canvasScreen.height = window.innerHeight;
-            if(option.autoPos.checked && isCharacterLoaded) {
-                char.x = option.x.value = window.innerWidth/2;
-                char.y = option.y.value = window.innerHeight/1;
-            }
-        });
+	// Resize event
+	window.addEventListener('resize', function(event){
+	    canvasScreen.width = window.innerWidth;
+	    canvasScreen.height = window.innerHeight;
+	    if (option.autoPos.checked && isCharacterLoaded) {
+	        char.x = option.x.value = window.innerWidth / 2;
+	        char.y = option.y.value = window.innerHeight / 1;
+	    }
+	});
         //Load localStorage if exists
-        if(localStorage["blue-archive-res-model"]) {
-            option.models.value = localStorage["blue-archive-res-model"]
-        } else {
-            option.models.value = option.models.children[0].value;
-        }
-        if(localStorage["blue-archive-res-loop"])
-            option.loop.checked = localStorage["blue-archive-res-loop"]
-        if(localStorage["blue-archive-res-talkSound"])
-            option.talkSound.checked = localStorage["blue-archive-res-talkSound"]
+	// Load localStorage if exists
+	if (localStorage["blue-archive-res-model"]) {
+	    option.models.value = localStorage["blue-archive-res-model"]
+	} else {
+	    option.models.value = option.models.children[0].value;
+	}
+	if (localStorage["blue-archive-res-loop"])
+	    option.loop.checked = localStorage["blue-archive-res-loop"]
+	if (localStorage["blue-archive-res-talkSound"])
 
         // Start
         reCanvas();
