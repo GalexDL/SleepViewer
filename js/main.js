@@ -35,14 +35,19 @@ function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
     app.loader
         .add('char', `./${model}`)
         .load(onAssetsLoaded);
-    // Update selected skin in the dropdown box
-    const modelName = option.models.options[option.models.selectedIndex].text;
-    updateSkinDropdown(modelName);
-}
 
-function updateSkinDropdown(modelName) {
-    // Get the skin names from the Spine model data
-    const skins = app.loader.resources.char.spineData.skins;
+}
+function updateSkinDropdown() {
+    // Get the current Spine model
+    const currentModel = option.models.value;
+
+    // Find the Spine data for the current model
+    const spineData = app.loader.resources[currentModel].spineData;
+
+    // Get the skin names from the Spine data
+    const skins = spineData.skins;
+
+    // Get the dropdown element
     const skinDropdown = document.getElementById("optionSkins");
 
     // Clear the existing options
@@ -55,12 +60,8 @@ function updateSkinDropdown(modelName) {
         option.innerText = skinName;
         skinDropdown.appendChild(option);
     }
-
-    // Select the previously selected skin, if available
-    if (skins[modelName]) {
-        skinDropdown.value = modelName;
-    }
 }
+
 function onAssetsLoaded(loader,res) {
     if(audioList.length != 0) {
         for(var i in audioList) {
@@ -68,7 +69,7 @@ function onAssetsLoaded(loader,res) {
         }
         audioList = [];
     }
-
+    updateSkinDropdown();
     char = new PIXI.spine.Spine(res.char.spineData);
 
     // console.log(char)
