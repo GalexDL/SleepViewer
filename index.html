@@ -167,10 +167,13 @@
             option.models.appendChild(opt);
         }
 	// Add this function to your code
+	// Modify the setSkinByName function
 	function setSkinByName(skinName) {
-	  if (char && char.skeleton) {
+	  if (char && char.spineData && char.spineData.skeletonData) {
 	    char.skeleton.setSkin(null);
 	    char.skeleton.setSkinByName(skinName);
+	    char.skeleton.setSlotsToSetupPose();
+	    char.state.apply(char.skeleton);
 	  }
 	}
         // Events
