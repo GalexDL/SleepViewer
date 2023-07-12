@@ -35,8 +35,32 @@ function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
     app.loader
         .add('char', `./${model}`)
         .load(onAssetsLoaded);
+    // Update selected skin in the dropdown box
+    const modelName = option.models.options[option.models.selectedIndex].text;
+    updateSkinDropdown(modelName);
 }
 
+function updateSkinDropdown(modelName) {
+    // Get the skin names from the Spine model data
+    const skins = app.loader.resources.char.spineData.skins;
+    const skinDropdown = document.getElementById("optionSkins");
+
+    // Clear the existing options
+    skinDropdown.innerHTML = "";
+
+    // Populate the dropdown box with skin names
+    for (const skinName in skins) {
+        const option = document.createElement("option");
+        option.value = skinName;
+        option.innerText = skinName;
+        skinDropdown.appendChild(option);
+    }
+
+    // Select the previously selected skin, if available
+    if (skins[modelName]) {
+        skinDropdown.value = modelName;
+    }
+}
 function onAssetsLoaded(loader,res) {
     if(audioList.length != 0) {
         for(var i in audioList) {
