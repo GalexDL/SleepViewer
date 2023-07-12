@@ -59,8 +59,10 @@
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <h3>Pokemon Sleep Sprites</h3>
             <p>Select/Type Pokemon</p>
-            <select class="uk-select" id="optionModels">
-            </select>
+            <select class="uk-select" id="optionModels"></select>
+	    <p>Select Skin</p>
+	    <select class="uk-select" id="optionSkins"></select>
+
             <p>Select Animation</p>
             <select class="uk-select" id="optionAnimations">
             </select>
@@ -143,6 +145,7 @@
     <script>
         let option = {
             models: document.getElementById("optionModels"),
+	    skins: document.getElementById("optionSkins"),
             animations: document.getElementById("optionAnimations"),
             loop: document.getElementById("optionLoop"),
             talkSound: document.getElementById("optionTalkSound"),
@@ -170,8 +173,15 @@
         // Events
         option.models.onchange = function() {
             localStorage.setItem("blue-archive-res-model", this.value);
-            loadChar(this.value)
+	    const selectedSkin = localStorage.getItem("blue-archive-res-skin");
+            loadChar(this.value, selectedSkin);
+
         }
+	option.skins.onchange = function() {
+	  localStorage.setItem("blue-archive-res-skin", this.value);
+	  loadChar(option.models.value, this.value);
+	}
+
         option.animations.onchange = function() {
             playAnimation(this.value);
         }
@@ -221,6 +231,17 @@
                 option.x.disabled = option.y.disabled = false;
             }
         }
+	    
+	// Inside the initialization code
+	if (localStorage["blue-archive-res-model"]) {
+	  option.models.value = localStorage["blue-archive-res-model"];
+	  const selectedSkin = localStorage.getItem("blue-archive-res-skin");
+	  loadChar(option.models.value, selectedSkin);
+	} else {
+	  option.models.value = option.models.children[0].value;
+	  loadChar(option.models.value, option.skins.value);
+	}
+
         option.x.onchange = function(e) {
             if(isCharacterLoaded)
                 char.x = this.value;
