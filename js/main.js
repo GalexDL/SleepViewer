@@ -16,14 +16,13 @@ function reCanvas() {
     );
 }
 
-function loadChar(model, skin) {
+function loadChar(model="./assets/spine/shiroko_home/Shiroko_home.skel") {
     isCharacterLoaded = false;
     // remove previous spine
     if(app.stage.children.length > 0) {
         app.stage.children.pop();
         app.loader.resources = {};
     }
-    char.skeleton.setSkinByName(skin);
     // remove previous audio
     if(audioList.length != 0) {
         for(var i in audioList) {
@@ -36,13 +35,6 @@ function loadChar(model, skin) {
     app.loader
         .add('char', `./${model}`)
         .load(onAssetsLoaded);
-    for (const skin of char.spineData.skins) {
-      let opt = document.createElement("option");
-      opt.value = skin.name;
-      opt.innerHTML = skin.name;
-      option.skins.appendChild(opt);
-    }
-
 }
 
 function onAssetsLoaded(loader,res) {
