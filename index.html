@@ -170,8 +170,7 @@
         // Events
         option.models.onchange = function() {
             localStorage.setItem("blue-archive-res-model", this.value);
-            const skin = getSelectedSkin(); // Add this helper function to retrieve the selected skin
-            loadChar(this.value, skin);
+            loadChar(this.value)
         }
         option.animations.onchange = function() {
             playAnimation(this.value);
@@ -248,16 +247,6 @@
 	canvasScreen.addEventListener("touchstart", handleTouchStart);
 	canvasScreen.addEventListener("touchend", handleTouchEnd);
 	canvasScreen.addEventListener("touchmove", handleTouchMove);
-
-
-	function getSelectedSkin() {
-            const modelValue = option.models.value;
-            const skinIndex = modelValue.lastIndexOf('_');
-            if (skinIndex !== -1) {
-                return modelValue.substring(skinIndex + 1);
-            }
-            return ''; // If no skin is selected
-        }
 
 	function handleMouseDown(e) {
 	    e.preventDefault();
