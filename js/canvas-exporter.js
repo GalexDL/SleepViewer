@@ -22,6 +22,12 @@ function exportAnimation(FPS = 24) {
       exportChar.y = char.y;
       exportChar.state.setAnimation(0, option.animations.value, 0);
 
+      // Apply skin
+      exportChar.skeleton.setSkin(null);
+      exportChar.skeleton.setSkinByName(option.skins.value);
+      exportChar.skeleton.setSlotsToSetupPose();
+      exportChar.state.apply(exportChar.skeleton);
+
       appExport.stage.addChild(exportChar);
 
       // Export Section
