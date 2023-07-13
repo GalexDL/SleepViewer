@@ -177,7 +177,6 @@
 	  char.spineData.setSkinByName(skinName);
 	}
 
-
 	    
         // Events
         option.models.onchange = function() {
@@ -186,7 +185,7 @@
         }
 
         option.skins.onchange = function() {
-            setSkinByName(normal);
+            setSkinByName(this.value);
         }
 	    
         option.animations.onchange = function() {
