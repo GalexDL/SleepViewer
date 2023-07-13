@@ -157,9 +157,8 @@ function playAnimation(name) {
 }
 
 function setSkinByName(skinName) {
-  //skeleton = new PIXI.spine.Spine(res.char.spineData.skeleton);
+  skeleton = new PIXI.spine.Spine(res.char.spineData.skeleton);
 
   skeleton.setSkin(null);
-  skeleton = new PIXI.spine.Spine(res.char.spineData.skeleton);
   skeleton.setSkinByName(skinName);
 }
