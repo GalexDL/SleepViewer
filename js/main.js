@@ -65,14 +65,14 @@ function onAssetsLoaded(loader,res) {
     option.y.value = char.y;
 
     // Insert skins to index.html
-    const animations = res.char.spineData.skin;
+    const skins = res.char.spineData.skin;
     let check = 0;
-    option.animations.innerHTML = "";
+    option.skins.innerHTML = "";
     for(var i in animations) {
         let a = document.createElement("option");
         a.value = a.innerHTML = skin[i].name;
         option.skin.append(a)
-        if(skin[i].name == "Start_Idle_01")
+        if(skin[i].name == "Normal")
             check = 1;
     }
     
@@ -150,4 +150,9 @@ function playAnimation(name) {
     }
 
     char.state.setAnimation(0, name, option.loop.checked);
+}
+
+function setSkinByName(skinName) {
+  skeleton.setSkin(null);
+  skeleton.setSkinByName(skinName);
 }
