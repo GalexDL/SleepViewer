@@ -68,7 +68,7 @@ function onAssetsLoaded(loader,res) {
     const skins = res.char.spineData.skin;
     let check = 0;
     option.skins.innerHTML = "";
-    for(var i in animations) {
+    for(var i in skins) {
         let a = document.createElement("option");
         a.value = a.innerHTML = skin[i].name;
         option.skin.append(a)
@@ -152,7 +152,7 @@ function playAnimation(name) {
     char.state.setAnimation(0, name, option.loop.checked);
 }
 
-/*function setSkinByName(skinName) {
+function setSkinByName(skinName) {
   skeleton.setSkin(null);
   skeleton.setSkinByName(skinName);
 }
