@@ -152,7 +152,7 @@ function playAnimation(name) {
     char.state.setAnimation(0, name, option.loop.checked);
 }
 
-function setSkinByName(skinName) {
+/*function setSkinByName(skinName) {
   skeleton.setSkin(null);
   skeleton.setSkinByName(skinName);
 }
