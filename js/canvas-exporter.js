@@ -53,9 +53,9 @@ function exportAnimation(FPS = 24) {
       };
       // Get Animation Length
       let animLength = 0;
-      for (var i in char.spineData.animations) {
-        if (char.spineData.animations[i].name == option.animations.value) {
-          animLength = char.spineData.animations[i].duration;
+      for (var i in exportchar.spineData.animations) {
+        if (exportchar.spineData.animations[i].name == option.animations.value) {
+          animLength = exportchar.spineData.animations[i].duration;
           break;
         }
       }
@@ -84,7 +84,7 @@ function exportAnimation(FPS = 24) {
         document.getElementById("rendering").style.display = "none";
         document.getElementById("complete").style.display = "block";
         document.getElementById("result").appendChild(exportVideo);
-      }, animLength * 50);
+      }, animLength * 1000);
     });
   let downloadButton = document.createElement("button");
   downloadButton.id = "download-button";
