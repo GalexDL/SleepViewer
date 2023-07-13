@@ -171,11 +171,10 @@
             option.models.appendChild(opt);
         }
 	    
-    	skintest = new PIXI.spine.Spine(char.skeleton);
 	    
 	function setSkinByName(skinName) {
-	  skintest.setSkin(null);
-	  skintest.setSkinByName(skinName);
+	  char.spineData.setSkin(null);
+	  char.spineData.setSkinByName(skinName);
 	}
 
 
