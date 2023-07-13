@@ -37,7 +37,7 @@ function loadChar(model) {
         .load(onAssetsLoaded);
 }
 
-let skeleton;
+const skeleton = res.char.spineData.skeleton;
 
 function onAssetsLoaded(loader,res) {
     const skeleton = res.char.spineData.skeleton;
