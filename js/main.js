@@ -37,7 +37,10 @@ function loadChar(model) {
         .load(onAssetsLoaded);
 }
 
+let skeleton;
+
 function onAssetsLoaded(loader,res) {
+  skeleton = res.char.spineData.skeleton;
     if(audioList.length != 0) {
         for(var i in audioList) {
             audioList[i].stop();
@@ -155,6 +158,6 @@ function playAnimation(name) {
 function setSkinByName(skinName) {
   char = new PIXI.spine.Spine(res.char.spineData.skeleton);
 
-  char.setSkin(null);
-  char.setSkinByName(skinName);
+  skeleton.setSkin(null);
+  skeleton.setSkinByName(skinName);
 }
