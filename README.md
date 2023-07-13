@@ -1,5 +1,5 @@
 # Pokemon Sleep Sprite Viewer
-For viewing Pokemon Sleep Sprites.
+Pokemon Sleep Sprite Viewer created by @ItsGalex and with the help of @ElChicoEevee
 
 - View Animations
 - ITS VERY IMPORTANT YOU CHANGE THE SKIN!!!
