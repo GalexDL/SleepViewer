@@ -37,12 +37,9 @@ function loadChar(model) {
         .load(onAssetsLoaded);
 }
 
-const skeleton = res.char.spineData.skeleton;
-let res;
 
 function onAssetsLoaded(loader, res) {
     const skeleton = res.char.spineData.skeleton;
-    const res = loader.resources;
     
     if(audioList.length != 0) {
         for(var i in audioList) {
