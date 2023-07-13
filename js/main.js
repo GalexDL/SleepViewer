@@ -66,14 +66,14 @@ function onAssetsLoaded(loader,res) {
 
     // Insert skins to index.html
     const skins = res.char.spineData.skins;
-    check = 0;
+    let checkk = 0;
     option.skins.innerHTML = "";
     for(var i in skins) {
         let a = document.createElement("option");
         a.value = a.innerHTML = skins[i].name;
         option.skins.append(a)
         if(skins[i].name == "Normal")
-            check = 1;
+            checkk = 1;
     }
     
     // Insert animations to index.html
