@@ -64,6 +64,18 @@ function onAssetsLoaded(loader,res) {
     option.x.value = char.x;
     option.y.value = char.y;
 
+    // Insert skins to index.html
+    const animations = res.char.spineData.skin;
+    let check = 0;
+    option.animations.innerHTML = "";
+    for(var i in animations) {
+        let a = document.createElement("option");
+        a.value = a.innerHTML = skin[i].name;
+        option.skin.append(a)
+        if(skin[i].name == "Start_Idle_01")
+            check = 1;
+    }
+    
     // Insert animations to index.html
     const animations = res.char.spineData.animations;
     let check = 0;
