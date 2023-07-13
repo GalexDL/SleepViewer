@@ -84,7 +84,7 @@ function exportAnimation(FPS = 24) {
         document.getElementById("rendering").style.display = "none";
         document.getElementById("complete").style.display = "block";
         document.getElementById("result").appendChild(exportVideo);
-      }, animLength * 1000);
+      }, animLength * 50);
     });
   let downloadButton = document.createElement("button");
   downloadButton.id = "download-button";
