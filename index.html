@@ -170,14 +170,7 @@
             opt.innerHTML = i;
             option.models.appendChild(opt);
         }
-	    
-	    
-	function setSkinByName(skinName) {
-	  char.spineData.setSkin(null);
-	  char.spineData.setSkinByName(skinName);
-	}
 
-	    
         // Events
         option.models.onchange = function() {
             localStorage.setItem("blue-archive-res-model", this.value);
