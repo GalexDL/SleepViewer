@@ -65,7 +65,7 @@ function onAssetsLoaded(loader,res) {
     option.y.value = char.y;
 
     // Insert skins to index.html
-    const skins = res.char.spineData.skin;
+    /*const skins = res.char.spineData.skin;
     let check = 0;
     option.skins.innerHTML = "";
     for(var i in skins) {
@@ -74,7 +74,7 @@ function onAssetsLoaded(loader,res) {
         option.skin.append(a)
         if(skin[i].name == "Normal")
             check = 1;
-    }
+    }*/
     
     // Insert animations to index.html
     const animations = res.char.spineData.animations;
