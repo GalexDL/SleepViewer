@@ -40,7 +40,7 @@ function loadChar(model) {
 let skeleton;
 
 function onAssetsLoaded(loader,res) {
-  skeleton = res.char.spineData.skeleton;
+    const skeleton = res.char.spineData.skeleton;
     if(audioList.length != 0) {
         for(var i in audioList) {
             audioList[i].stop();
