@@ -64,17 +64,6 @@ function onAssetsLoaded(loader,res) {
     option.x.value = char.x;
     option.y.value = char.y;
 
-    // Insert skins to index.html
-    const skins = res.char.spineData.skins;
-    let checkk = 0;
-    option.skins.innerHTML = "";
-    for(var i in skins) {
-        let a = document.createElement("option");
-        a.value = a.innerHTML = skins[i].name;
-        option.skins.append(a)
-        if(skins[i].name == "Normal")
-            checkk = 1;
-    }
     
     // Insert animations to index.html
     const animations = res.char.spineData.animations;
@@ -136,6 +125,17 @@ function onAssetsLoaded(loader,res) {
             audioList.push(voice);
         }
     })
+    // Insert skins to index.html
+    const skins = res.char.spineData.skins;
+    let checker = 0;
+    option.skins.innerHTML = "";
+    for(var i in skins) {
+        let a = document.createElement("option");
+        a.value = a.innerHTML = skins[i].name;
+        option.skins.append(a)
+        if(skins[i].name == "Normal")
+            checker = 1;
+    }
     //Add to main canvas
     app.stage.addChild(char);
     isCharacterLoaded = true;
