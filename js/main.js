@@ -4,6 +4,7 @@ let audioList = []
 let audios;
 let isCharacterLoaded = false;
 let debug = 0; //set via console
+let res;
 
 function reCanvas() {
     audios = JSON.parse(httpGet("./data/audio.json"));
@@ -38,7 +39,8 @@ function loadChar(model) {
 }
 
 
-function onAssetsLoaded(loader, res) {
+function onAssetsLoaded(loader, resources) {
+    res = resources;
     
     if(audioList.length != 0) {
         for(var i in audioList) {
@@ -155,7 +157,7 @@ function playAnimation(name) {
 }
 
 function setSkinByName(skinName) {
-  char = new PIXI.spine.Spine(res.char.spineData.skeleton);
+  skeleton = new PIXI.spine.Spine(res.char.spineData.skeleton);
 
   skeleton.setSkin(null);
   skeleton.setSkinByName(skinName);
