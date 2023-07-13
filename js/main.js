@@ -66,7 +66,7 @@ function onAssetsLoaded(loader,res) {
 
     // Insert skins to index.html
     const skins = res.char.spineData.skins;
-    let check = 0;
+    check = 0;
     option.skins.innerHTML = "";
     for(var i in skins) {
         let a = document.createElement("option");
