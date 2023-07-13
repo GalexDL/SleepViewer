@@ -137,7 +137,7 @@ function onAssetsLoaded(loader, resources) {
         let a = document.createElement("option");
         a.value = a.innerHTML = skins[i].name;
         option.skins.append(a)
-        if(skins[i].name == "Normal")
+        if(skins[i].name == "normal")
             checker = 1;
     }
     //Add to main canvas
