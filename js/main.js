@@ -65,16 +65,16 @@ function onAssetsLoaded(loader,res) {
     option.y.value = char.y;
 
     // Insert skins to index.html
-    /*const skins = res.char.spineData.skin;
+    const skins = res.char.spineData.skins;
     let check = 0;
     option.skins.innerHTML = "";
     for(var i in skins) {
         let a = document.createElement("option");
-        a.value = a.innerHTML = skin[i].name;
-        option.skin.append(a)
-        if(skin[i].name == "Normal")
+        a.value = a.innerHTML = skins[i].name;
+        option.skins.append(a)
+        if(skins[i].name == "Normal")
             check = 1;
-    }*/
+    }
     
     // Insert animations to index.html
     const animations = res.char.spineData.animations;
@@ -153,6 +153,6 @@ function playAnimation(name) {
 }
 
 function setSkinByName(skinName) {
-  skeleton.setSkin(null);
-  skeleton.setSkinByName(skinName);
+  char.setSkin(null);
+  char.setSkinByName(skinName);
 }
