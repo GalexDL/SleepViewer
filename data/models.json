@@ -100,7 +100,46 @@
       "ShinyMetapod-Stand": "assets/spine/pokemon_0011/Shiny/stand.skel",
       "ShinyButterfree-Stand": "assets/spine/pokemon_0012/Shiny/stand.skel",
 
+      
+      "Rattata 019": "assets/spine/pokemon_0019/Normal/move.skel",
+      "Raticate 020": "assets/spine/pokemon_0020/Normal/move.skel",
+      "Rattata-Drowse": "assets/spine/pokemon_0019/Normal/sleep-drowse.skel",
+      "Raticate-Drowse": "assets/spine/pokemon_0020/Normal/sleep-drowse.skel",
+      "Raticate-Normal": "assets/spine/pokemon_0020/Normal/sleep-normal.skel",
+      "Rattata-Stand": "assets/spine/pokemon_0019/Normal/stand.skel",
+      "Raticate-Stand": "assets/spine/pokemon_0020/Normal/stand.skel",
+      
+      "ShinyRattata": "assets/spine/pokemon_0019/Shiny/move.skel",
+      "ShinyRaticate": "assets/spine/pokemon_0020/Shiny/move.skel",
+      "ShinyButterfree": "assets/spine/pokemon_0012/Shiny/move.skel",
+      "ShinyRattata-Drowse": "assets/spine/pokemon_0019/Shiny/sleep-drowse.skel",
+      "ShinyRaticate-Drowse": "assets/spine/pokemon_0020/Shiny/sleep-drowse.skel",
+      "ShinyRaticate-Normal": "assets/spine/pokemon_0020/Shiny/sleep-normal.skel",
+      "ShinyRattata-Stand": "assets/spine/pokemon_0019/Shiny/stand.skel",
+      "ShinyRaticate-Stand": "assets/spine/pokemon_0020/Shiny/stand.skel",
+      
 
+      "Ekans 023": "assets/spine/pokemon_0023/Normal/move.skel",
+      "Arbok 024": "assets/spine/pokemon_0024/Normal/move.skel",
+      "Ekans-Drowse": "assets/spine/pokemon_0023/Normal/sleep-drowse.skel",
+      "Arbok-Drowse": "assets/spine/pokemon_0024/Normal/sleep-drowse.skel",
+      "Ekans-Normal": "assets/spine/pokemon_0023/Normal/sleep-normal.skel",
+      "Arbok-Normal": "assets/spine/pokemon_0024/Normal/sleep-normal.skel",
+      "Ekans-Stand": "assets/spine/pokemon_0023/Normal/stand.skel",
+      "Ekans-RStand": "assets/spine/pokemon_0023/Normal/stand-reverse.skel",
+      "Arbok-Stand": "assets/spine/pokemon_0024/Normal/stand.skel",
+      
+      "ShinyEkans": "assets/spine/pokemon_0023/Shiny/move.skel",
+      "ShinyArbok": "assets/spine/pokemon_0024/Shiny/move.skel",
+      "ShinyButterfree": "assets/spine/pokemon_0012/Shiny/move.skel",
+      "ShinyEkans-Drowse": "assets/spine/pokemon_0023/Shiny/sleep-drowse.skel",
+      "ShinyArbok-Drowse": "assets/spine/pokemon_0024/Shiny/sleep-drowse.skel",
+      "ShinyEkans-Normal": "assets/spine/pokemon_0023/Shiny/sleep-normal.skel",
+      "ShinyArbok-Normal": "assets/spine/pokemon_0024/Shiny/sleep-normal.skel",
+      "ShinyEkans-Stand": "assets/spine/pokemon_0023/Shiny/stand.skel",
+      "ShinyEkans-RStand": "assets/spine/pokemon_0023/Shiny/stand-reverse.skel",
+      "ShinyArbok-Stand": "assets/spine/pokemon_0024/Shiny/stand.skel",
+      
 
 
 
