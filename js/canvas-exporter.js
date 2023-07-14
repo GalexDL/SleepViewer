@@ -43,7 +43,9 @@ function exportAnimation(FPS = 24) {
       };
 
       mediaRecorder.onstop = function (e) {
-        let blob = new Blob(chunks, { type: option.exportType.value });
+        let blob = new Blob(chunks, {
+          type: option.exportType.value,
+        });
         chunks = [];
         let videoURL = URL.createObjectURL(blob);
         exportVideo.src = videoURL;
