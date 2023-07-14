@@ -152,15 +152,15 @@
       "ShinyRaichu-Normal": "assets/spine/pokemon_0026/Shiny/sleep-normal.skel",
       
 
-      "Jigglypuff 040": "assets/spine/pokemon_0040/Normal/move.skel",      
-      "Jigglypuff-Drowse": "assets/spine/pokemon_0040/Normal/sleep-drowse.skel",
-      "Jigglypuff-Normal": "assets/spine/pokemon_0040/Normal/sleep-normal.skel",
-      "Jigglypuff-Stand": "assets/spine/pokemon_0040/Normal/stand.skel",
+      "Wigglytuff 040": "assets/spine/pokemon_0040/Normal/move.skel",      
+      "Wigglytuff-Drowse": "assets/spine/pokemon_0040/Normal/sleep-drowse.skel",
+      "Wigglytuff-Normal": "assets/spine/pokemon_0040/Normal/sleep-normal.skel",
+      "Wigglytuff-Stand": "assets/spine/pokemon_0040/Normal/stand.skel",
       
-      "ShinyJigglypuff": "assets/spine/pokemon_0040/Shiny/move.skel",
-      "ShinyJigglypuff-Drowse": "assets/spine/pokemon_0040/Shiny/sleep-drowse.skel",
-      "ShinyJigglypuff-Normal": "assets/spine/pokemon_0040/Shiny/sleep-normal.skel",
-      "ShinyJigglypuff-Stand": "assets/spine/pokemon_0040/Shiny/stand.skel",
+      "ShinyWigglytuff": "assets/spine/pokemon_0040/Shiny/move.skel",
+      "ShinyWigglytuff-Drowse": "assets/spine/pokemon_0040/Shiny/sleep-drowse.skel",
+      "ShinyWigglytuff-Normal": "assets/spine/pokemon_0040/Shiny/sleep-normal.skel",
+      "ShinyWigglytuff-Stand": "assets/spine/pokemon_0040/Shiny/stand.skel",
       
 
 
