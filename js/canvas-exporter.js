@@ -97,11 +97,9 @@ function exportAnimation(FPS = 24) {
   });
 }
 
-
 function downloadVideo(videoURL) {
   const a = document.createElement("a");
-  a.href = videoURL;
-  a.download = "animation.mp4";
+  a.href = URL.createObjectURL(blob);
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
