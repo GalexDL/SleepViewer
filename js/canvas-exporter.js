@@ -1,6 +1,6 @@
-// Main
 import gif from "gif.js";
 
+// Main
 function exportAnimation(FPS = 24) {
   let exportCanvas = document.createElement("canvas");
   exportCanvas.id = "export-canvas";
