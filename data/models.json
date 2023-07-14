@@ -20,6 +20,7 @@
       "ShinyVenusaur-Normal": "assets/spine/pokemon_0003/Shiny/sleep-normal.skel",
       "ShinyIvysaur-Stand": "assets/spine/pokemon_0002/Shiny/stand.skel",
       "ShinyVenusaur-Stand": "assets/spine/pokemon_0003/Shiny/stand.skel",
+
       
       "Charmander 004": "assets/spine/pokemon_0004/Normal/move.skel",
       "Charmeleon 005": "assets/spine/pokemon_0005/Normal/move.skel",
@@ -46,6 +47,7 @@
       "ShinyCharmander-Stand": "assets/spine/pokemon_0004/Shiny/stand.skel",
       "ShinyCharmeleon-Stand": "assets/spine/pokemon_0005/Shiny/stand.skel",
       "ShinyCharizard-Stand": "assets/spine/pokemon_0006/Shiny/stand.skel",
+
       
       "Squirtle 007": "assets/spine/pokemon_0007/Normal/move.skel",
       "Wartortle 008": "assets/spine/pokemon_0008/Normal/move.skel",
@@ -74,30 +76,30 @@
       "ShinyBlastoise-Stand": "assets/spine/pokemon_0009/Shiny/stand.skel",
 
 
-
-      "Caterpie 010": "assets/spine/pokemon_0010/Normal/move.skel"
-      "Metapod 011": "assets/spine/pokemon_0011/Normal/move.skel"
-      "Butterfree 012": "assets/spine/pokemon_0012/Normal/move.skel"
-      "Caterpie-Drowse": "assets/spine/pokemon_0010/Normal/sleep-drowse.skel"
-      "Metapod-Drowse": "assets/spine/pokemon_0011/Normal/sleep-drowse.skel"
-      "Butterfree-Drowse": "assets/spine/pokemon_0012/Normal/sleep-drowse.skel"
-      "Metapod-Normal": "assets/spine/pokemon_0011/Normal/sleep-normal.skel"
-      "Butterfree-Normal": "assets/spine/pokemon_0012/Normal/sleep-normal.skel"
-      "Caterpie-Stand": "assets/spine/pokemon_0010/Normal/stand.skel"
-      "Metapod-Stand": "assets/spine/pokemon_0011/Normal/stand.skel"
-      "Butterfree-Stand": "assets/spine/pokemon_0012/Normal/stand.skel"
+      "Caterpie 010": "assets/spine/pokemon_0010/Normal/move.skel",
+      "Metapod 011": "assets/spine/pokemon_0011/Normal/move.skel",
+      "Butterfree 012": "assets/spine/pokemon_0012/Normal/move.skel",
+      "Caterpie-Drowse": "assets/spine/pokemon_0010/Normal/sleep-drowse.skel",
+      "Metapod-Drowse": "assets/spine/pokemon_0011/Normal/sleep-drowse.skel",
+      "Butterfree-Drowse": "assets/spine/pokemon_0012/Normal/sleep-drowse.skel",
+      "Metapod-Normal": "assets/spine/pokemon_0011/Normal/sleep-normal.skel",
+      "Butterfree-Normal": "assets/spine/pokemon_0012/Normal/sleep-normal.skel",
+      "Caterpie-Stand": "assets/spine/pokemon_0010/Normal/stand.skel",
+      "Metapod-Stand": "assets/spine/pokemon_0011/Normal/stand.skel",
+      "Butterfree-Stand": "assets/spine/pokemon_0012/Normal/stand.skel",
       
-      "ShinyCaterpie": "assets/spine/pokemon_0010/Shiny/move.skel"
-      "ShinyMetapod": "assets/spine/pokemon_0011/Shiny/move.skel"
-      "ShinyButterfree": "assets/spine/pokemon_0012/Shiny/move.skel"
-      "ShinyCaterpie-Drowse": "assets/spine/pokemon_0010/Shiny/sleep-drowse.skel"
-      "ShinyMetapod-Drowse": "assets/spine/pokemon_0011/Shiny/sleep-drowse.skel"
-      "ShinyButterfree-Drowse": "assets/spine/pokemon_0012/Shiny/sleep-drowse.skel"
-      "ShinyMetapod-Normal": "assets/spine/pokemon_0011/Shiny/sleep-normal.skel"
-      "ShinyButterfree-Normal": "assets/spine/pokemon_0012/Shiny/sleep-normal.skel"
-      "ShinyCaterpie-Stand": "assets/spine/pokemon_0010/Shiny/stand.skel"
-      "ShinyMetapod-Stand": "assets/spine/pokemon_0011/Shiny/stand.skel"
-      "ShinyButterfree-Stand": "assets/spine/pokemon_0012/Shiny/stand.skel"
+      "ShinyCaterpie": "assets/spine/pokemon_0010/Shiny/move.skel",
+      "ShinyMetapod": "assets/spine/pokemon_0011/Shiny/move.skel",
+      "ShinyButterfree": "assets/spine/pokemon_0012/Shiny/move.skel",
+      "ShinyCaterpie-Drowse": "assets/spine/pokemon_0010/Shiny/sleep-drowse.skel",
+      "ShinyMetapod-Drowse": "assets/spine/pokemon_0011/Shiny/sleep-drowse.skel",
+      "ShinyButterfree-Drowse": "assets/spine/pokemon_0012/Shiny/sleep-drowse.skel",
+      "ShinyMetapod-Normal": "assets/spine/pokemon_0011/Shiny/sleep-normal.skel",
+      "ShinyButterfree-Normal": "assets/spine/pokemon_0012/Shiny/sleep-normal.skel",
+      "ShinyCaterpie-Stand": "assets/spine/pokemon_0010/Shiny/stand.skel",
+      "ShinyMetapod-Stand": "assets/spine/pokemon_0011/Shiny/stand.skel",
+      "ShinyButterfree-Stand": "assets/spine/pokemon_0012/Shiny/stand.skel",
+
 
 
 
