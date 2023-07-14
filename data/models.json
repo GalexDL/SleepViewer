@@ -225,11 +225,66 @@
       "Mankey-Drowse": "assets/spine/pokemon_0056/Normal/sleep-drowse.skel",
       "Mankey-Normal": "assets/spine/pokemon_0056/Normal/sleep-normal.skel",
       "Mankey-Stand": "assets/spine/pokemon_0056/Normal/stand.skel",
-      
       "ShinyMankey": "assets/spine/pokemon_0056/Shiny/move.skel",
       "ShinyMankey-Drowse": "assets/spine/pokemon_0056/Shiny/sleep-drowse.skel",
       "ShinyMankey-Normal": "assets/spine/pokemon_0056/Shiny/sleep-normal.skel",
       "ShinyMankey-Stand": "assets/spine/pokemon_0056/Shiny/stand.skel",
+
+      "Primeape 057": "assets/spine/pokemon_0057/Normal/move.skel",
+      "Primeape-Drowse": "assets/spine/pokemon_0057/Normal/sleep-drowse.skel",
+      "Primeape-Normal": "assets/spine/pokemon_0057/Normal/sleep-normal.skel",
+      "Primeape-Stand": "assets/spine/pokemon_0057/Normal/stand.skel",
+      "ShinyPrimeape": "assets/spine/pokemon_0057/Shiny/move.skel",
+      "ShinyPrimeape-Drowse": "assets/spine/pokemon_0057/Shiny/sleep-drowse.skel",
+      "ShinyPrimeape-Normal": "assets/spine/pokemon_0057/Shiny/sleep-normal.skel",
+      "ShinyPrimeape-Stand": "assets/spine/pokemon_0057/Shiny/stand.skel",
+      
+
+      "Growlithe 058": "assets/spine/pokemon_0058/Normal/move.skel",
+      "Arcanine 059": "assets/spine/pokemon_0059/Normal/move.skel",
+      "Growlithe-Drowse": "assets/spine/pokemon_0058/Normal/sleep-drowse.skel",
+      "Arcanine-Drowse": "assets/spine/pokemon_0059/Normal/sleep-drowse.skel",
+      "Growlithe-Normal": "assets/spine/pokemon_0058/Normal/sleep-normal.skel",
+      "Arcanine-Normal": "assets/spine/pokemon_0059/Normal/sleep-normal.skel",
+      "Growlithe-Stand": "assets/spine/pokemon_0058/Normal/stand.skel",
+      "Arcanine-Stand": "assets/spine/pokemon_0059/Normal/stand.skel",
+      
+      "ShinyGrowlithe": "assets/spine/pokemon_0058/Shiny/move.skel",
+      "ShinyArcanine": "assets/spine/pokemon_0059/Shiny/move.skel",
+      "ShinyGrowlithe-Drowse": "assets/spine/pokemon_0058/Shiny/sleep-drowse.skel",
+      "ShinyArcanine-Drowse": "assets/spine/pokemon_0059/Shiny/sleep-drowse.skel",
+      "ShinyGrowlithe-Normal": "assets/spine/pokemon_0058/Shiny/sleep-normal.skel",
+      "ShinyArcanine-Normal": "assets/spine/pokemon_0059/Shiny/sleep-normal.skel",
+      "ShinyGrowlithe-Stand": "assets/spine/pokemon_0058/Shiny/stand.skel",
+      "ShinyArcanine-Stand": "assets/spine/pokemon_0059/Shiny/stand.skel",
+      
+
+      "Bellsprout 069": "assets/spine/pokemon_0069/Normal/move.skel",
+      "Weepinbell 070": "assets/spine/pokemon_0070/Normal/move.skel",
+      "Victreebel 071": "assets/spine/pokemon_0071/Normal/move.skel",
+      "Bellsprout-Drowse": "assets/spine/pokemon_0069/Normal/sleep-drowse.skel",
+      "Weepinbell-Drowse": "assets/spine/pokemon_0070/Normal/sleep-drowse.skel",
+      "Victreebel-Drowse": "assets/spine/pokemon_0071/Normal/sleep-drowse.skel",
+      "Bellsprout-Normal": "assets/spine/pokemon_0069/Normal/sleep-normal.skel",
+      "Weepinbell-Normal": "assets/spine/pokemon_0070/Normal/sleep-normal.skel",
+      "Victreebel-Normal": "assets/spine/pokemon_0071/Normal/sleep-normal.skel",
+      "Bellsprout-Stand": "assets/spine/pokemon_0069/Normal/stand.skel",
+      "Weepinbell-Stand": "assets/spine/pokemon_0070/Normal/stand.skel",
+      "Victreebel-Stand": "assets/spine/pokemon_0071/Normal/stand.skel",
+      
+      "ShinyBellsprout": "assets/spine/pokemon_0069/Shiny/move.skel",
+      "ShinyWeepinbell": "assets/spine/pokemon_0070/Shiny/move.skel",
+      "ShinyVictreebel": "assets/spine/pokemon_0071/Shiny/move.skel",
+      "ShinyBellsprout-Drowse": "assets/spine/pokemon_0069/Shiny/sleep-drowse.skel",
+      "ShinyWeepinbell-Drowse": "assets/spine/pokemon_0070/Shiny/sleep-drowse.skel",
+      "ShinyVictreebel-Drowse": "assets/spine/pokemon_0071/Shiny/sleep-drowse.skel",
+      "ShinyBellsprout-Normal": "assets/spine/pokemon_0069/Shiny/sleep-normal.skel",
+      "ShinyWeepinbell-Normal": "assets/spine/pokemon_0070/Shiny/sleep-normal.skel",
+      "ShinyVictreebel-Normal": "assets/spine/pokemon_0071/Shiny/sleep-normal.skel",
+      "ShinyBellsprout-Stand": "assets/spine/pokemon_0069/Shiny/stand.skel",
+      "ShinyWeepinbell-Stand": "assets/spine/pokemon_0070/Shiny/stand.skel",
+      "ShinyVictreebel-Stand": "assets/spine/pokemon_0071/Shiny/stand.skel",
+
       
 
       
