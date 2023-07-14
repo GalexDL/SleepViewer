@@ -1,5 +1,4 @@
-import gif from "gif.js";
-
+// Main
 function exportAnimation(FPS = 24) {
   let exportCanvas = document.createElement("canvas");
   exportCanvas.id = "export-canvas";
@@ -35,16 +34,56 @@ function exportAnimation(FPS = 24) {
           
 
       let videoStream = exportCanvas.captureStream(FPS); //default to 60
-      let gif = new gif.GIF();
-      gif.ondataavailable = function (e) {
-        // Do something with the data
+      let mediaRecorder = new MediaRecorder(videoStream);
+      //EYOW
+      //EOOOOW
+      let chunks = [];
+      mediaRecorder.ondataavailable = function (e) {
+        chunks.push(e.data);
       };
 
+      mediaRecorder.onstop = function (e) {
+        let blob = new Blob(chunks, { type: option.exportType.value });
+        chunks = [];
+        let videoURL = URL.createObjectURL(blob);
+        exportVideo.src = videoURL;
+      };
+      mediaRecorder.ondataavailable = function (e) {
+        chunks.push(e.data);
+      };
+      // Get Animation Length
+      let animLength = 0;
+      for (var i in char.spineData.animations) {
+        if (char.spineData.animations[i].name == option.animations.value) {
+          animLength = char.spineData.animations[i].duration;
+          break;
+        }
+      }
+
+      //Modal Popup
+      document.getElementById("rendering").style.display = "block";
+      document.getElementById("complete").style.display = "none";
+      UIkit.modal(document.getElementById("modal-exporter")).show();
+      // Progressbar
+      document.getElementById("export-progress").value = 0;
+      let progress = setInterval(function () {
+        document.getElementById("export-progress").value += 1;
+      }, animLength * 10);
+
       // Record
-      gif.captureStream(videoStream);
+      mediaRecorder.start();
       setTimeout(function () {
-        // Stop recording and save the GIF data to a file
-        gif.save("animation.gif");
+        mediaRecorder.stop();
+        //Free Resources
+        appExport.stage.children.pop();
+        appExport.loader.resources = {};
+        exportCanvas.remove();
+        clearInterval(progress);
+
+        //Update modal
+        document.getElementById("rendering").style.display = "none";
+        document.getElementById("complete").style.display = "block";
+        document.getElementById("result").appendChild(exportVideo);
       }, animLength * 1000);
     });
   let downloadButton = document.createElement("button");
@@ -65,3 +104,7 @@ function downloadVideo(videoURL) {
   a.click();
   document.body.removeChild(a);
 }
+// char.state.setAnimation(0, "Idle_01", false);
+// mediaRecorder.start();
+// setTimeout(function (){ mediaRecorder.stop(); }, 4000);
+
