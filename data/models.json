@@ -286,7 +286,243 @@
       "ShinyVictreebel-Stand": "assets/spine/pokemon_0071/Shiny/stand.skel",
 
       
+      "Geodude 074": "assets/spine/pokemon_0074/Normal/move.skel",
+      "Graveler 075": "assets/spine/pokemon_0075/Normal/move.skel",
+      "Golem 076": "assets/spine/pokemon_0076/Normal/move.skel",
+      "Geodude-Drowse": "assets/spine/pokemon_0074/Normal/sleep-drowse.skel",
+      "Graveler-Drowse": "assets/spine/pokemon_0075/Normal/sleep-drowse.skel",
+      "Golem-Drowse": "assets/spine/pokemon_0076/Normal/sleep-drowse.skel",
+      "Geodude-Normal": "assets/spine/pokemon_0074/Normal/sleep-normal.skel",
+      "Graveler-Normal": "assets/spine/pokemon_0075/Normal/sleep-normal.skel",
+      "Golem-Normal": "assets/spine/pokemon_0076/Normal/sleep-normal.skel",
+      "Geodude-Stand": "assets/spine/pokemon_0074/Normal/stand.skel",
+      "Graveler-Stand": "assets/spine/pokemon_0075/Normal/stand.skel",
+      "Golem-Stand": "assets/spine/pokemon_0076/Normal/stand.skel",
+      
+      "ShinyGeodude": "assets/spine/pokemon_0074/Shiny/move.skel",
+      "ShinyGraveler": "assets/spine/pokemon_0075/Shiny/move.skel",
+      "ShinyGolem": "assets/spine/pokemon_0076/Shiny/move.skel",
+      "ShinyGeodude-Drowse": "assets/spine/pokemon_0074/Shiny/sleep-drowse.skel",
+      "ShinyGraveler-Drowse": "assets/spine/pokemon_0075/Shiny/sleep-drowse.skel",
+      "ShinyGolem-Drowse": "assets/spine/pokemon_0076/Shiny/sleep-drowse.skel",
+      "ShinyGeodude-Normal": "assets/spine/pokemon_0074/Shiny/sleep-normal.skel",
+      "ShinyGraveler-Normal": "assets/spine/pokemon_0075/Shiny/sleep-normal.skel",
+      "ShinyGolem-Normal": "assets/spine/pokemon_0076/Shiny/sleep-normal.skel",
+      "ShinyGeodude-Stand": "assets/spine/pokemon_0074/Shiny/stand.skel",
+      "ShinyGraveler-Stand": "assets/spine/pokemon_0075/Shiny/stand.skel",
+      "ShinyGolem-Stand": "assets/spine/pokemon_0076/Shiny/stand.skel",
 
+
+
+      "Slowpoke 079": "assets/spine/pokemon_0079/Normal/move.skel",
+      "Slowbro 080": "assets/spine/pokemon_0080/Normal/move.skel",
+      "Slowpoke-Drowse": "assets/spine/pokemon_0079/Normal/sleep-drowse.skel",
+      "Slowbro-Drowse": "assets/spine/pokemon_0080/Normal/sleep-drowse.skel",
+      "Slowpoke-Normal": "assets/spine/pokemon_0079/Normal/sleep-normal.skel",
+      "Slowbro-Normal": "assets/spine/pokemon_0080/Normal/sleep-normal.skel",
+      "Slowpoke-Stand": "assets/spine/pokemon_0079/Normal/stand.skel",
+      "Slowbro-Stand": "assets/spine/pokemon_0080/Normal/stand.skel",
+      
+      "ShinySlowpoke": "assets/spine/pokemon_0079/Shiny/move.skel",
+      "ShinySlowbro": "assets/spine/pokemon_0080/Shiny/move.skel",
+      "ShinySlowpoke-Drowse": "assets/spine/pokemon_0079/Shiny/sleep-drowse.skel",
+      "ShinySlowbro-Drowse": "assets/spine/pokemon_0080/Shiny/sleep-drowse.skel",
+      "ShinySlowpoke-Normal": "assets/spine/pokemon_0079/Shiny/sleep-normal.skel",
+      "ShinySlowbro-Normal": "assets/spine/pokemon_0080/Shiny/sleep-normal.skel",
+      "ShinySlowpoke-Stand": "assets/spine/pokemon_0079/Shiny/stand.skel",
+      "ShinySlowbro-Stand": "assets/spine/pokemon_0080/Shiny/stand.skel",
+      
+
+      "Magnemite 081": "assets/spine/pokemon_0081/Normal/move.skel",
+      "Magneton 082": "assets/spine/pokemon_0082/Normal/move.skel",
+      "Magnemite-Drowse": "assets/spine/pokemon_0081/Normal/sleep-drowse.skel",
+      "Magneton-Drowse": "assets/spine/pokemon_0082/Normal/sleep-drowse.skel",
+      "Magnemite-Normal": "assets/spine/pokemon_0081/Normal/sleep-normal.skel",
+      "Magneton-Normal": "assets/spine/pokemon_0082/Normal/sleep-normal.skel",
+      "Magnemite-Stand": "assets/spine/pokemon_0081/Normal/stand.skel",
+      "Magneton-Stand": "assets/spine/pokemon_0082/Normal/stand.skel",
+      
+      "ShinyMagnemite": "assets/spine/pokemon_0081/Shiny/move.skel",
+      "ShinyMagneton": "assets/spine/pokemon_0082/Shiny/move.skel",
+      "ShinyMagnemite-Drowse": "assets/spine/pokemon_0081/Shiny/sleep-drowse.skel",
+      "ShinyMagneton-Drowse": "assets/spine/pokemon_0082/Shiny/sleep-drowse.skel",
+      "ShinyMagnemite-Normal": "assets/spine/pokemon_0081/Shiny/sleep-normal.skel",
+      "ShinyMagneton-Normal": "assets/spine/pokemon_0082/Shiny/sleep-normal.skel",
+      "ShinyMagnemite-Stand": "assets/spine/pokemon_0081/Shiny/stand.skel",
+      "ShinyMagneton-Stand": "assets/spine/pokemon_0082/Shiny/stand.skel",
+      
+
+      "Doduo 084": "assets/spine/pokemon_0084/Normal/move.skel",
+      "Dodrio 085": "assets/spine/pokemon_0085/Normal/move.skel",
+      "Doduo-Drowse": "assets/spine/pokemon_0084/Normal/sleep-drowse.skel",
+      "Dodrio-Drowse": "assets/spine/pokemon_0085/Normal/sleep-drowse.skel",
+      "Doduo-Normal": "assets/spine/pokemon_0084/Normal/sleep-normal.skel",
+      "Dodrio-Normal": "assets/spine/pokemon_0085/Normal/sleep-normal.skel",
+      "Doduo-Stand": "assets/spine/pokemon_0084/Normal/stand.skel",
+      "Dodrio-Stand": "assets/spine/pokemon_0085/Normal/stand.skel",
+      
+      "ShinyDoduo": "assets/spine/pokemon_0084/Shiny/move.skel",
+      "ShinyDodrio": "assets/spine/pokemon_0085/Shiny/move.skel",
+      "ShinyDoduo-Drowse": "assets/spine/pokemon_0084/Shiny/sleep-drowse.skel",
+      "ShinyDodrio-Drowse": "assets/spine/pokemon_0085/Shiny/sleep-drowse.skel",
+      "ShinyDoduo-Normal": "assets/spine/pokemon_0084/Shiny/sleep-normal.skel",
+      "ShinyDodrio-Normal": "assets/spine/pokemon_0085/Shiny/sleep-normal.skel",
+      "ShinyDoduo-Stand": "assets/spine/pokemon_0084/Shiny/stand.skel",
+      "ShinyDodrio-Stand": "assets/spine/pokemon_0085/Shiny/stand.skel",
+      
+
+      "Gastly 092": "assets/spine/pokemon_0092/Normal/move.skel",
+      "Haunter 093": "assets/spine/pokemon_0093/Normal/move.skel",
+      "Gengar 094": "assets/spine/pokemon_0094/Normal/move.skel",
+      "Gastly-Drowse": "assets/spine/pokemon_0092/Normal/sleep-drowse.skel",
+      "Haunter-Drowse": "assets/spine/pokemon_0093/Normal/sleep-drowse.skel",
+      "Gengar-Drowse": "assets/spine/pokemon_0094/Normal/sleep-drowse.skel",
+      "Gastly-Normal": "assets/spine/pokemon_0092/Normal/sleep-normal.skel",
+      "Haunter-Normal": "assets/spine/pokemon_0093/Normal/sleep-normal.skel",
+      "Gengar-Normal": "assets/spine/pokemon_0094/Normal/sleep-normal.skel",
+      "Gastly-Stand": "assets/spine/pokemon_0092/Normal/stand.skel",
+      "Haunter-Stand": "assets/spine/pokemon_0093/Normal/stand.skel",
+      "Gengar-Stand": "assets/spine/pokemon_0094/Normal/stand.skel",
+      
+      "ShinyGastly": "assets/spine/pokemon_0092/Shiny/move.skel",
+      "ShinyHaunter": "assets/spine/pokemon_0093/Shiny/move.skel",
+      "ShinyGengar": "assets/spine/pokemon_0094/Shiny/move.skel",
+      "ShinyGastly-Drowse": "assets/spine/pokemon_0092/Shiny/sleep-drowse.skel",
+      "ShinyHaunter-Drowse": "assets/spine/pokemon_0093/Shiny/sleep-drowse.skel",
+      "ShinyGengar-Drowse": "assets/spine/pokemon_0094/Shiny/sleep-drowse.skel",
+      "ShinyGastly-Normal": "assets/spine/pokemon_0092/Shiny/sleep-normal.skel",
+      "ShinyHaunter-Normal": "assets/spine/pokemon_0093/Shiny/sleep-normal.skel",
+      "ShinyGengar-Normal": "assets/spine/pokemon_0094/Shiny/sleep-normal.skel",
+      "ShinyGastly-Stand": "assets/spine/pokemon_0092/Shiny/stand.skel",
+      "ShinyHaunter-Stand": "assets/spine/pokemon_0093/Shiny/stand.skel",
+      "ShinyGengar-Stand": "assets/spine/pokemon_0094/Shiny/stand.skel",
+
+
+      "Cubone 104": "assets/spine/pokemon_0104/Normal/move.skel",
+      "Marowak 105": "assets/spine/pokemon_0105/Normal/move.skel",
+      "Cubone-Drowse": "assets/spine/pokemon_0104/Normal/sleep-drowse.skel",
+      "Marowak-Drowse": "assets/spine/pokemon_0105/Normal/sleep-drowse.skel",
+      "Cubone-Normal": "assets/spine/pokemon_0104/Normal/sleep-normal.skel",
+      "Marowak-Normal": "assets/spine/pokemon_0105/Normal/sleep-normal.skel",
+      "Cubone-Stand": "assets/spine/pokemon_0104/Normal/stand.skel",
+      "Marowak-Stand": "assets/spine/pokemon_0105/Normal/stand.skel",
+      
+      "ShinyCubone": "assets/spine/pokemon_0104/Shiny/move.skel",
+      "ShinyMarowak": "assets/spine/pokemon_0105/Shiny/move.skel",
+      "ShinyCubone-Drowse": "assets/spine/pokemon_0104/Shiny/sleep-drowse.skel",
+      "ShinyMarowak-Drowse": "assets/spine/pokemon_0105/Shiny/sleep-drowse.skel",
+      "ShinyCubone-Normal": "assets/spine/pokemon_0104/Shiny/sleep-normal.skel",
+      "ShinyMarowak-Normal": "assets/spine/pokemon_0105/Shiny/sleep-normal.skel",
+      "ShinyCubone-Stand": "assets/spine/pokemon_0104/Shiny/stand.skel",
+      "ShinyMarowak-Stand": "assets/spine/pokemon_0105/Shiny/stand.skel",
+      
+      "Kangaskhan 115": "assets/spine/pokemon_0115/Normal/move.skel",
+      "Kangaskhan-Drowse": "assets/spine/pokemon_0115/Normal/sleep-drowse.skel",
+      "Kangaskhan-Normal": "assets/spine/pokemon_0115/Normal/sleep-normal.skel",
+      "Kangaskhan-Stand": "assets/spine/pokemon_0115/Normal/stand.skel",
+      
+      "ShinyKangaskhan": "assets/spine/pokemon_0115/Shiny/move.skel",
+      "ShinyKangaskhan-Drowse": "assets/spine/pokemon_0115/Shiny/sleep-drowse.skel",
+      "ShinyKangaskhan-Normal": "assets/spine/pokemon_0115/Shiny/sleep-normal.skel",
+      "ShinyKangaskhan-Stand": "assets/spine/pokemon_0115/Shiny/stand.skel",
+
+      
+      "Pinsir 127": "assets/spine/pokemon_0127/Normal/move.skel",
+      "Pinsir-Drowse": "assets/spine/pokemon_0127/Normal/sleep-drowse.skel",
+      "Pinsir-Normal": "assets/spine/pokemon_0127/Normal/sleep-normal.skel",
+      "Pinsir-Stand": "assets/spine/pokemon_0127/Normal/stand.skel",
+      
+      "ShinyPinsir": "assets/spine/pokemon_0127/Shiny/move.skel",
+      "ShinyPinsir-Drowse": "assets/spine/pokemon_0127/Shiny/sleep-drowse.skel",
+      "ShinyPinsir-Normal": "assets/spine/pokemon_0127/Shiny/sleep-normal.skel",
+      "ShinyPinsir-Stand": "assets/spine/pokemon_0127/Shiny/stand.skel",
+      
+
+      "Ditto 132": "assets/spine/pokemon_0132/Normal/move.skel",
+      "Ditto-Drowse": "assets/spine/pokemon_0132/Normal/sleep-drowse.skel",
+      "Ditto-Normal": "assets/spine/pokemon_0132/Normal/sleep-normal.skel",
+      "Ditto-Stand": "assets/spine/pokemon_0132/Normal/stand.skel",
+      
+      "ShinyDitto": "assets/spine/pokemon_0132/Shiny/move.skel",
+      "ShinyDitto-Drowse": "assets/spine/pokemon_0132/Shiny/sleep-drowse.skel",
+      "ShinyDitto-Normal": "assets/spine/pokemon_0132/Shiny/sleep-normal.skel",
+      "ShinyDitto-Stand": "assets/spine/pokemon_0132/Shiny/stand.skel",
+      
+      "Jiggly Ditto": "assets/spine/pokemon_0132/Pink/sleep-4.skel",
+      "Gengar Ditto": "assets/spine/pokemon_0132/Purple/sleep-5.skel",
+      
+
+
+      "Eevee 133": "assets/spine/pokemon_0133/Normal/move.skel",
+      "Vaporeon 134": "assets/spine/pokemon_0134/Normal/move.skel",
+      "Jolteon 135": "assets/spine/pokemon_0135/Normal/move.skel",
+      "Flareon 136": "assets/spine/pokemon_0136/Normal/move.skel",
+      "Eevee-Drowse": "assets/spine/pokemon_0133/Normal/sleep-drowse.skel",
+      "Vaporeon-Drowse": "assets/spine/pokemon_0134/Normal/sleep-drowse.skel",
+      "Jolteon-Drowse": "assets/spine/pokemon_0135/Normal/sleep-drowse.skel",
+      "Flareon-Drowse": "assets/spine/pokemon_0136/Normal/sleep-drowse.skel",
+      "Eevee-Normal": "assets/spine/pokemon_0133/Normal/sleep-normal.skel",
+      "Vaporeon-Normal": "assets/spine/pokemon_0134/Normal/sleep-normal.skel",
+      "Jolteon-Normal": "assets/spine/pokemon_0135/Normal/sleep-normal.skel",
+      "Flareon-Normal": "assets/spine/pokemon_0136/Normal/sleep-normal.skel",
+      "Eevee-Stand": "assets/spine/pokemon_0133/Normal/stand.skel",
+      "Vaporeon-Stand": "assets/spine/pokemon_0134/Normal/stand.skel",
+      "Jolteon-Stand": "assets/spine/pokemon_0135/Normal/stand.skel",
+      "Flareon-Stand": "assets/spine/pokemon_0136/Normal/stand.skel",
+      
+      "ShinyEevee": "assets/spine/pokemon_0133/Shiny/move.skel",
+      "ShinyVaporeon": "assets/spine/pokemon_0134/Shiny/move.skel",
+      "ShinyJolteon": "assets/spine/pokemon_0135/Shiny/move.skel",
+      "ShinyFlareon": "assets/spine/pokemon_0136/Shiny/move.skel",
+      "ShinyEevee-Drowse": "assets/spine/pokemon_0133/Shiny/sleep-drowse.skel",
+      "ShinyVaporeon-Drowse": "assets/spine/pokemon_0134/Shiny/sleep-drowse.skel",
+      "ShinyJolteon-Drowse": "assets/spine/pokemon_0135/Shiny/sleep-drowse.skel",
+      "ShinyFlareon-Drowse": "assets/spine/pokemon_0136/Shiny/sleep-drowse.skel",
+      "ShinyEevee-Normal": "assets/spine/pokemon_0133/Shiny/sleep-normal.skel",
+      "ShinyVaporeon-Normal": "assets/spine/pokemon_0134/Shiny/sleep-normal.skel",
+      "ShinyJolteon-Normal": "assets/spine/pokemon_0135/Shiny/sleep-normal.skel",
+      "ShinyFlareon-Normal": "assets/spine/pokemon_0136/Shiny/sleep-normal.skel",
+      "ShinyEevee-Stand": "assets/spine/pokemon_0133/Shiny/stand.skel",
+      "ShinyVaporeon-Stand": "assets/spine/pokemon_0134/Shiny/stand.skel",
+      "ShinyJolteon-Stand": "assets/spine/pokemon_0135/Shiny/stand.skel",
+      "ShinyFlareon-Stand": "assets/spine/pokemon_0136/Shiny/stand.skel",
+
+
+      "Dratini 147": "assets/spine/pokemon_0147/Normal/move.skel",
+      "Dragonair 148": "assets/spine/pokemon_0148/Normal/move.skel",
+      "Dragonite 149": "assets/spine/pokemon_0149/Normal/move.skel",
+      "Dratini-Drowse": "assets/spine/pokemon_0147/Normal/sleep-drowse.skel",
+      "Dragonair-Drowse": "assets/spine/pokemon_0148/Normal/sleep-drowse.skel",
+      "Dragonite-Drowse": "assets/spine/pokemon_0149/Normal/sleep-drowse.skel",
+      "Dratini-Normal": "assets/spine/pokemon_0147/Normal/sleep-normal.skel",
+      "Dragonair-Normal": "assets/spine/pokemon_0148/Normal/sleep-normal.skel",
+      "Dragonite-Normal": "assets/spine/pokemon_0149/Normal/sleep-normal.skel",
+      "Dratini-Stand": "assets/spine/pokemon_0147/Normal/stand.skel",
+      "Dragonair-Stand": "assets/spine/pokemon_0148/Normal/stand.skel",
+      "Dragonite-Stand": "assets/spine/pokemon_0149/Normal/stand.skel",
+      
+      "ShinyDratini": "assets/spine/pokemon_0147/Shiny/move.skel",
+      "ShinyDragonair": "assets/spine/pokemon_0148/Shiny/move.skel",
+      "ShinyDragonite": "assets/spine/pokemon_0149/Shiny/move.skel",
+      "ShinyDratini-Drowse": "assets/spine/pokemon_0147/Shiny/sleep-drowse.skel",
+      "ShinyDragonair-Drowse": "assets/spine/pokemon_0148/Shiny/sleep-drowse.skel",
+      "ShinyDragonite-Drowse": "assets/spine/pokemon_0149/Shiny/sleep-drowse.skel",
+      "ShinyDratini-Normal": "assets/spine/pokemon_0147/Shiny/sleep-normal.skel",
+      "ShinyDragonair-Normal": "assets/spine/pokemon_0148/Shiny/sleep-normal.skel",
+      "ShinyDragonite-Normal": "assets/spine/pokemon_0149/Shiny/sleep-normal.skel",
+      "ShinyDratini-Stand": "assets/spine/pokemon_0147/Shiny/stand.skel",
+      "ShinyDragonair-Stand": "assets/spine/pokemon_0148/Shiny/stand.skel",
+      "ShinyDragonite-Stand": "assets/spine/pokemon_0149/Shiny/stand.skel",
+
+      
+      
+
+
+
+
+
+
+      
       
       "Dont Click": ""
 
