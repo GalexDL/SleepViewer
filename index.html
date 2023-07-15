@@ -130,6 +130,7 @@
                             </div>
                             <div class="uk-width-1-1">
                                 <button class="uk-button uk-button-default" id="optionExport">Export</button>
+                                <button class="uk-button uk-button-default" id="optionExportt">gif</button>
                             </div>
                         </div>
                     </div>
@@ -157,7 +158,8 @@
             y: document.getElementById("optionY"),
             FPS: document.getElementById("optionFPS"),
             export: document.getElementById("optionExport"),
-            exportType: document.getElementById("optionExportType")
+            gifexport: document.getElementById("optionExportt"),
+            exportType: document.getElementById("optionExportType") 
         }
 
         // Init models
@@ -239,6 +241,9 @@
         }
         option.export.onclick = function() {
             exportAnimation(FPS=parseInt(option.FPS.value))
+        }
+        option.gifexport.onclick = function() {
+            exportAnimationn(FPS=parseInt(option.FPS.value))
         }
 	// Draggable Canvas
 	let canvasScreen = document.getElementById("screen");
@@ -382,6 +387,7 @@
     </script>
     <!-- Exporter -->
     <script src="js/canvas-exporter.js"></script>
+    <script src="js/gif-exporter.js"></script>
     <!-- Modal Exporter -->
     <div id="modal-exporter" class="uk-flex-top" uk-modal='{"bg-close": false, "esc-close": false}'>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical" id="modal-exporter-content">
