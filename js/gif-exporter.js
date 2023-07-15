@@ -1,5 +1,5 @@
 // Main
-function exportAnimation(FPS = 24) {
+function exportAnimationn(FPS = 24) {
   let exportCanvas = document.createElement("canvas");
   exportCanvas.id = "export-canvas";
   exportCanvas.style.display = "none";
