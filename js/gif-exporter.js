@@ -72,6 +72,14 @@ function exportAnimationn(FPS = 24) {
         document.getElementById("result").appendChild(exportVideo);
       }, animLength * 1000);
 
+function downloadVideo(videoURL) {
+  const a = document.createElement("a");
+  a.href = videoURL;
+  a.download = "animation.gif";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
 
 
 
