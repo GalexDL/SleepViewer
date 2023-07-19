@@ -11,13 +11,13 @@ function reCanvas() {
     app = new PIXI.Application(
         {
             width: window.innerWidth,
-            backgroundColor: 0x50875f,
+            backgroundColor: 0xffbc3a,
             height: window.innerHeight,
             view: document.getElementById("screen")
         }
     );
 }
-
+//50875f
 function loadChar(model) {
     isCharacterLoaded = false;
     // remove previous spine
