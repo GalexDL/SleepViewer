@@ -12,6 +12,7 @@ function reCanvas() {
         {
             width: window.innerWidth,
             backgroundImage: "https://i.ibb.co/bKk6hsN/base.png",
+            backgroundRepeat: "repeat",
             height: window.innerHeight,
             view: document.getElementById("screen")
         }
