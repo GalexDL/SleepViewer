@@ -81,7 +81,7 @@
                                 <p>Background Color</p>
                             </div>
 			    <div>
-				<input class="uk-input" type="text" id="optionColors" placeholder="0xFF0000">
+				<input class="uk-input" type="text" id="optionColors" placeholder="#FF0000">
 			    </div>
                             <div class="uk-width-1-1">
                                 <button class="uk-button uk-button-default" id="optionScaleFit">Fit Scale</button>
@@ -155,7 +155,7 @@
             models: document.getElementById("optionModels"),
             skins: document.getElementById("optionSkins"),
             animations: document.getElementById("optionAnimations"),
-            color: document.getElementById("optionColors"),
+            colorr: document.getElementById("optionColors"),
             loop: document.getElementById("optionLoop"),
             talkSound: document.getElementById("optionTalkSound"),
             scaleFit: document.getElementById("optionScaleFit"),
@@ -193,7 +193,7 @@
             playAnimation(this.value);
         }
 	    
-        option.color.onchange = function() {
+        option.colorr.onchange = function() {
             setColor(this.value);
         }
         option.loop.onchange = function() {
