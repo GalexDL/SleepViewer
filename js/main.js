@@ -172,5 +172,5 @@ function setSkinByName(skinName) {
 }
 
 function setColor(colorName) {
-    colorr = colorname;
+    colorr = colorName;
 }
