@@ -5,13 +5,14 @@ let audios;
 let isCharacterLoaded = false;
 let debug = 0; //set via console
 let res;
+let colorr;
 
 function reCanvas() {
     audios = JSON.parse(httpGet("./data/audio.json"));
     app = new PIXI.Application(
         {
             width: window.innerWidth,
-            backgroundColor: 0xffbc3a,
+            backgroundColor: colorr,
             height: window.innerHeight,
             view: document.getElementById("screen")
         }
@@ -168,4 +169,8 @@ function setSkinByName(skinName) {
   char.skeleton.setSkinByName(skinName);
   char.skeleton.setSlotsToSetupPose(); // Reset slot attachments
   char.state.apply(char.skeleton); // Apply any changes to the animatio
+}
+
+function setColor(colorName) {
+    colorr = colorname;
 }
