@@ -74,9 +74,15 @@
             <!-- Advanced Options -->
             <ul uk-accordion>
                 <li>
-                    <a class="uk-accordion-title" href="#">Scale Settings</a>
+                    <a class="uk-accordion-title" href="#">Advanced Settings</a>
                     <div class="uk-accordion-content">
                         <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-4 uk-margin">
+                                <p>BG Color</p>
+                            </div>
+			    <div>
+				<input class="uk-input" type="text" id="optionColors" placeholder="#ffbc3a">
+			    </div>
                             <div class="uk-width-1-1">
                                 <button class="uk-button uk-button-default" id="optionScaleFit">Fit Scale</button>
                                 <button class="uk-button uk-button-default" id="optionScaleHalf">1/4 Scale</button>
@@ -149,6 +155,7 @@
             models: document.getElementById("optionModels"),
             skins: document.getElementById("optionSkins"),
             animations: document.getElementById("optionAnimations"),
+            color: document.getElementById("optionColors"),
             loop: document.getElementById("optionLoop"),
             talkSound: document.getElementById("optionTalkSound"),
             scaleFit: document.getElementById("optionScaleFit"),
@@ -184,6 +191,10 @@
 	    
         option.animations.onchange = function() {
             playAnimation(this.value);
+        }
+	    
+        option.color.onchange = function() {
+            setColor(this.value);
         }
         option.loop.onchange = function() {
             localStorage.setItem("blue-archive-res-loop", this.checked);
