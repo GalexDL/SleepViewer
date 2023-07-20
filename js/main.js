@@ -171,11 +171,4 @@ function setSkinByName(skinName) {
   char.state.apply(char.skeleton); // Apply any changes to the animatio
 }
 
-function setColor(colorName) {
-    //colorr = colorName;
-    app.backgroundColor = colorName;
-    updateColor();
-}
-function updateColor() {
-  app.backgroundColor = colorr;
-}
+
