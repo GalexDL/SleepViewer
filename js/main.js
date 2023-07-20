@@ -172,5 +172,10 @@ function setSkinByName(skinName) {
 }
 
 function setColor(colorName) {
-    colorr = colorName;
+    //colorr = colorName;
+    app.backgroundColor = colorName;
+    updateColor();
+}
+function updateColor() {
+  app.backgroundColor = colorr;
 }
