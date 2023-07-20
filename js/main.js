@@ -12,7 +12,7 @@ function reCanvas() {
     app = new PIXI.Application(
         {
             width: window.innerWidth,
-            backgroundColor: colorr,
+            backgroundColor: "colorr",
             height: window.innerHeight,
             view: document.getElementById("screen")
         }
