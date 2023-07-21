@@ -195,9 +195,9 @@
             localStorage.setItem("blue-archive-res-loop", this.checked);
             playAnimation(option.animations.value);
         }
-        option.talkSound.onchange = function() {
-            localStorage.setItem("blue-archive-res-talkSound", this.checked);
-        }
+        //option.talkSound.onchange = function() {
+            //localStorage.setItem("blue-archive-res-talkSound", this.checked);
+        //}
         option.scaleFit.onclick = function() {
             if(isCharacterLoaded)
                 char.scale.x = char.scale.y = option.scale.value = option.models.value.indexOf("_home") != -1 ? Math.max(app.renderer.height/char.spineData.height, app.renderer.width/char.spineData.width) : Math.min(app.renderer.height/char.spineData.height, app.renderer.width/char.spineData.width);
