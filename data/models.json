@@ -450,8 +450,6 @@
       
       "Jiggly Ditto": "assets/spine/pokemon_0132/Pink/sleep-4.skel",
       "Gengar Ditto": "assets/spine/pokemon_0132/Purple/sleep-5.skel",
-      
-
 
       "Eevee 133": "assets/spine/pokemon_0133/Normal/move.skel",
       "Vaporeon 134": "assets/spine/pokemon_0134/Normal/move.skel",
@@ -1013,9 +1011,151 @@
       "ShinySylveon-Stand": "assets/spine/pokemon_0700/Shiny/stand.skel",
 
 
-      
-      
-      "Dont Click": ""
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      "Snorlax-TITLE": "assets/spine/z_Snorlax/1/title.skel",
+      "Snorlax2-Sleep": "assets/spine/z_Snorlax/2/sleep.skel",
+      "Snorlax3-Sleep": "assets/spine/z_Snorlax/3/sleep.skel",
+      "Snorlax4-Sleep": "assets/spine/z_Snorlax/4/sleep.skel",
+      "Snorlax5-Sleep": "assets/spine/z_Snorlax/5/sleep.skel",
+      "Snorlax6-Sleep": "assets/spine/z_Snorlax/6/sleep.skel",
+
+      "SleepCapPikachu-sitdown": "assets/spine/z_PikachuNightCap/Normal/sitdown.skel",
+
+      "Jigglypuff-Move": "assets/spine/z_Jigglypuff/Normal/move.skel",
+      "ShinyJigglypuff-Move": "assets/spine/z_Jigglypuff/Shiny/move.skel",
+
+      "Comfey-Move": "assets/spine/z_Comfey/Normal/move.skel",
+      "Comfey-Stand": "assets/spine/z_Comfey/Normal/stand.skel",
+      "Comfey-Drowse": "assets/spine/z_Comfey/Normal/sleep-drowse.skel",
+      "Comfey-Normal": "assets/spine/z_Comfey/Normal/sleep-normal.skel",
+      "ShinyComfey-Move": "assets/spine/z_Comfey/Shiny/move.skel",
+      "ShinyComfey-Stand": "assets/spine/z_Comfey/Shiny/stand.skel",
+      "ShinyComfey-Drowse": "assets/spine/z_Comfey/Shiny/sleep-drowse.skel",
+      "ShinyComfey-Normal": "assets/spine/z_Comfey/Shiny/sleep-normal.skel",
       
+      "Delibird-Move": "assets/spine/z_Delibird/Normal/move.skel",
+      "Delibird-Stand": "assets/spine/z_Delibird/Normal/stand.skel",
+      "Delibird-Drowse": "assets/spine/z_Delibird/Normal/sleep-drowse.skel",
+      "Delibird-Normal": "assets/spine/z_Delibird/Normal/sleep-normal.skel",
+      "ShinyDelibird-Move": "assets/spine/z_Delibird/Shiny/move.skel",
+      "ShinyDelibird-Stand": "assets/spine/z_Delibird/Shiny/stand.skel",
+      "ShinyDelibird-Drowse": "assets/spine/z_Delibird/Shiny/sleep-drowse.skel",
+      "ShinyDelibird-Normal": "assets/spine/z_Delibird/Shiny/sleep-normal.skel",
+
+      "Vulpix-Move": "assets/spine/z_Vulpix/Normal/move.skel",
+      "Vulpix-Stand": "assets/spine/z_Vulpix/Normal/stand.skel",
+      "Vulpix-Drowse": "assets/spine/z_Vulpix/Normal/sleep-drowse.skel",
+      "Vulpix-Normal": "assets/spine/z_Vulpix/Normal/sleep-normal.skel",
+      "ShinyVulpix-Move": "assets/spine/z_Vulpix/Shiny/move.skel",
+      "ShinyVulpix-Stand": "assets/spine/z_Vulpix/Shiny/stand.skel",
+      "ShinyVulpix-Drowse": "assets/spine/z_Vulpix/Shiny/sleep-drowse.skel",
+      "ShinyVulpix-Normal": "assets/spine/z_Vulpix/Shiny/sleep-normal.skel",
+
+      "Ninetails-Move": "assets/spine/z_Ninetails/Normal/move.skel",
+      "Ninetails-Stand": "assets/spine/z_Ninetails/Normal/stand.skel",
+      "Ninetails-Drowse": "assets/spine/z_Ninetails/Normal/sleep-drowse.skel",
+      "Ninetails-Normal": "assets/spine/z_Ninetails/Normal/sleep-normal.skel",
+      "ShinyNinetails-Move": "assets/spine/z_Ninetails/Shiny/move.skel",
+      "ShinyNinetails-Stand": "assets/spine/z_Ninetails/Shiny/stand.skel",
+      "ShinyNinetails-Drowse": "assets/spine/z_Ninetails/Shiny/sleep-drowse.skel",
+      "ShinyNinetails-Normal": "assets/spine/z_Ninetails/Shiny/sleep-normal.skel",
+
+      "Dedenne-Move": "assets/spine/z_Dedenne/Normal/move.skel",
+      "Dedenne-Stand": "assets/spine/z_Dedenne/Normal/stand.skel",
+      "Dedenne-Drowse": "assets/spine/z_Dedenne/Normal/sleep-drowse.skel",
+      "Dedenne-Normal": "assets/spine/z_Dedenne/Normal/sleep-normal.skel",
+      "ShinyDedenne-Move": "assets/spine/z_Dedenne/Shiny/move.skel",
+      "ShinyDedenne-Stand": "assets/spine/z_Dedenne/Shiny/stand.skel",
+      "ShinyDedenne-Drowse": "assets/spine/z_Dedenne/Shiny/sleep-drowse.skel",
+      "ShinyDedenne-Normal": "assets/spine/z_Dedenne/Shiny/sleep-normal.skel",
+
+      "Shuppet-Move": "assets/spine/z_Shuppet/Normal/move.skel",
+      "Shuppet-Stand": "assets/spine/z_Shuppet/Normal/stand.skel",
+      "Shuppet-Drowse": "assets/spine/z_Shuppet/Normal/sleep-drowse.skel",
+      "Shuppet-Normal": "assets/spine/z_Shuppet/Normal/sleep-normal.skel",
+      "ShinyShuppet-Move": "assets/spine/z_Shuppet/Shiny/move.skel",
+      "ShinyShuppet-Stand": "assets/spine/z_Shuppet/Shiny/stand.skel",
+      "ShinyShuppet-Drowse": "assets/spine/z_Shuppet/Shiny/sleep-drowse.skel",
+      "ShinyShuppet-Normal": "assets/spine/z_Shuppet/Shiny/sleep-normal.skel",
+
+      "Banette-Move": "assets/spine/z_Banette/Normal/move.skel",
+      "Banette-Stand": "assets/spine/z_Banette/Normal/stand.skel",
+      "Banette-Drowse": "assets/spine/z_Banette/Normal/sleep-drowse.skel",
+      "Banette-Normal": "assets/spine/z_Banette/Normal/sleep-normal.skel",
+      "ShinyBanette-Move": "assets/spine/z_Banette/Shiny/move.skel",
+      "ShinyBanette-Stand": "assets/spine/z_Banette/Shiny/stand.skel",
+      "ShinyBanette-Drowse": "assets/spine/z_Banette/Shiny/sleep-drowse.skel",
+      "ShinyBanette-Normal": "assets/spine/z_Banette/Shiny/sleep-normal.skel",
+
+      "MimeJr-Move": "assets/spine/z_MimeJr/Normal/move.skel",
+      "MimeJr-Stand": "assets/spine/z_MimeJr/Normal/stand.skel",
+      "MimeJr-Drowse": "assets/spine/z_MimeJr/Normal/sleep-drowse.skel",
+      "MimeJr-Normal": "assets/spine/z_MimeJr/Normal/sleep-normal.skel",
+      "ShinyMimeJr-Move": "assets/spine/z_MimeJr/Shiny/move.skel",
+      "ShinyMimeJr-Stand": "assets/spine/z_MimeJr/Shiny/stand.skel",
+      "ShinyMimeJr-Drowse": "assets/spine/z_MimeJr/Shiny/sleep-drowse.skel",
+      "ShinyMimeJr-Normal": "assets/spine/z_MimeJr/Shiny/sleep-normal.skel",
+
+      "MrMime-Move": "assets/spine/z_MrMime/Normal/move.skel",
+      "MrMime-Stand": "assets/spine/z_MrMime/Normal/stand.skel",
+      "MrMime-Drowse": "assets/spine/z_MimeJr/Normal/sleep-drowse.skel",
+      "MrMime-Normal": "assets/spine/z_MrMime/Normal/sleep-normal.skel",
+      "ShinyMrMime-Move": "assets/spine/z_MrMime/Shiny/move.skel",
+      "ShinyMrMime-Stand": "assets/spine/z_MrMime/Shiny/stand.skel",
+      "ShinyMrMime-Drowse": "assets/spine/z_MrMime/Shiny/sleep-drowse.skel",
+      "ShinyMrMime-Normal": "assets/spine/z_MrMime/Shiny/sleep-normal.skel",
+
+
+
+
+      "PH-Raikou-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Entei-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Ralts-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Kirlia-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Gardevoir-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Gallade-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Snover-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Abomasnow-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Stufful-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Bewear-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Onix-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "PH-Steelix-Title": "assets/spine/z_Snorlax/1/title.skel",
+
+      "Dont Click": ""
+      
+
 }
