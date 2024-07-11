@@ -8,17 +8,17 @@ let res;
 let colorr;
 
 function reCanvas() {
-    audios = JSON.parse(httpGet("./data/audio.json"));
     app = new PIXI.Application(
         {
-            width: window.innerWidth,
-            backgroundColor: "colorr",
-            height: window.innerHeight,
+            width: 768,
+            transparent: true,
+            //backgroundColor: "414854",
+            height: 590,
             view: document.getElementById("screen")
         }
     );
 }
-//50875f
+
 function loadChar(model) {
     isCharacterLoaded = false;
     // remove previous spine
@@ -26,31 +26,17 @@ function loadChar(model) {
         app.stage.children.pop();
         app.loader.resources = {};
     }
-    // remove previous audio
-    if(audioList.length != 0) {
-        for(var i in audioList) {
-            audioList[i].stop();
-        }
-        audioList = [];
-    }
 
     // load new spine
     app.loader
         .add('char', `./${model}`)
         .load(onAssetsLoaded);
-}
 
+}
 
 function onAssetsLoaded(loader, resources) {
     res = resources;
     
-    if(audioList.length != 0) {
-        for(var i in audioList) {
-            audioList[i].stop();
-        }
-        audioList = [];
-    }
-
     char = new PIXI.spine.Spine(res.char.spineData);
 
     // console.log(char)
@@ -58,15 +44,26 @@ function onAssetsLoaded(loader, resources) {
     // console.log(char.spineData.width)
 
     // Scaler
-    char.scale.x = 0.5;
-    char.scale.y = 0.5;
+    char.scale.x = 0.45;
+    char.scale.y = 0.45;
 
     // Centerize
-    char.x = window.innerWidth/2;
-    char.y = window.innerHeight/1;
+    char.x = 400;
+    char.y = 460;
+    //char.x = window.innerWidth/4;
+    //char.y = window.innerHeight/1.5;
+    function isMobile() {
+        return window.innerWidth <= 768; // Adjust this threshold as needed
+    }
+    if (isMobile()) {
+        char.x = window.innerWidth/1;
+        char.y = window.innerHeight/2;
+    }
+    //char.x = window.innerWidth/15;
+    //char.y = window.innerHeight/2.8;
 
     //Set option value
-    option.scale.value = 0.5;
+    option.scale.value = 0.45;
     option.x.value = char.x;
     option.y.value = char.y;
 
