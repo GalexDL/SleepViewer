@@ -1,61 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleep Viewer</title>
-    <link rel="icon" type="image/x-icon"
-    href="favicon.ico"/>
-    <meta name="og:title" content="PKMN Sleep Sprite Viewer"/>
-	<meta property="og:url" content="https://galexdl.github.io/CafeViewer/" />
-	<meta name="keywords" content="caferemix"/>
-	<meta name="description" content="PKMN Cafe ReMix Sprite Viewer"/>
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Sleeper Viewer 2.0</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Mail/style.css">
+        <script src="js/script.js"></script>
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- PIXI -->
-    <script src="js/pixi.js"></script>
-    <script src="js/pixi-spine.js"></script>
+        <!-- PIXI -->
+        <script src="js/pixi.js"></script>
+        <script src="js/pixi-spine.js"></script>
 
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/gif.js/dist/gif.js"></script>
+        <!-- HTML2Canvas -->
+        <script src="js/html2canvas.min.js"></script>
 
 
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
-
-    <!-- Main -->
-    <script src="js/main.js"></script>
-
-    <!-- Utility -->
-    <script src="js/utility.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gif.js/dist/gif.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gifshot/build/gifshot.min.js"></script>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/gif.js/dist/gif.js"></script>
 
 
-    <!-- Howler -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
 
-</head>
-<body>
-    <nav class="uk-navbar-container" uk-navbar style="position: fixed;background: none;">
+        <!-- Main -->
+        <script src="js/main.js"></script>
+
+        <!-- Utility -->
+        <script src="js/utility.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gif.js/dist/gif.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gifshot/build/gifshot.min.js"></script>
+
+
+        <!-- Howler -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-workers.js');
+      }
+    </script>
+
+
+
+<body class="color">
+
+    <img class="bottom" src="UI/teal.png">
+    <img class="title" src="UI/titlesvv.png">
+
+    <!--<img class="grass" src="UI/_Background.png"> !-->
+
+
+    <div id="banner"></div>
+    <button onclick="mailtest()" type="button" class="Mailbtn"></button>
+    <img class="book" src="UI/book.png">
+
+    <div class="search-bar">
+        <input type="search" id="number-filter" placeholder="Search Dex #">
+    </div>
+
+    <div class="DexYellow"></div>
+    <div class="DexOrange"></div>
+    <p class="SSD">Sleep Style Dex</p>
+    <p class="SSD2">55.424%</p>
+
+
+    <!--  News -->
+    <!--               -->
+    <section class="services" style="display: none;">
+        <div class="container">
+           <div class="row">
+              <div class="service-items">
+                  <div class="row">
+                     <!-- item start -->
+                     <div class="item">
+                        <div class="item-inner">
+                           <h3 style="display: none;">Version 2.0 Patchnotes</h3>
+                           <p style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                           <div class="read-more-cont">
+                             <p>Ta da! The Pokemon Sleep Viewer has gotten a complete redesign! It should be alot easier to select a pokemon and view their different models.</p>
+                             <img src="UI/Updates_en.png" alt="img">
+                             <br>
+                             <p>The search button is a placeholder, will it ever work? I hope so!</p>
+                             <p>Its been a year since any Pokemon has been added but with the help of <a href="https://twitter.com/LidiaMCFurrys">LidiaMCFurry</a>, a couple of pokemon have been added. There are still a quite a bunch not in here, but will soon!</p>
+                             <p>Added Pokemon:</p>
+                             <ul>
+                                <li>Raikou</li>
+                                <li>Entei</li>
+                                <li>Comfey</li>
+                                <li>Delibird</li>
+                                <li>Dedenne</li>
+                                <li>Shuppet</li>
+                                <li>Banette</li>
+                                <li>Mime Jr</li>
+                                <li>Mr.Mime</li>
+                                <li>Clefable</li>
+                                <li>Clefairy</li>
+                                <li>Vulpix</li>
+                                <li>Ninetails</li>
+                             </ul>
+                             <p> Unsupported Pokemon:</p>
+                             <ul>
+                                <li>Snorlax's</li>
+                                <li>Pikachu Nightcap</li>
+                                <li>Pikachu Halloween</li>
+                                <li>Pikachu Chirstmas</li>
+                                <li>Onix</li>
+                                <li>Steelix</li>
+                                <li>Snover</li>
+                                <li>Abomasnow</li>
+                                <li>Ralts</li>
+                                <li>Kirlia</li>
+                                <li>Gardevoir</li>
+                                <li>Gallade</li>
+                                <li>Stufful</li>
+                                <li>Bewear</li>
+                                <li>Cramorant</li>
+                                <li>Sprigatito</li>
+                                <li>Floragato</li>
+                                <li>Meowscarada</li>
+                                <li>Fuecoco</li>
+                                <li>Crocalor</li>
+                                <li>Skeledirge</li>
+                                <li>Quaxly</li>
+                                <li>Quaxwell</li>
+                                <li>Quaquaval</li>
+                             </ul>
+                             <img src="UI/20Million_ingame.png" alt="img">
+                             <br>
+                             <p>Theres alot of sleep styles missing, we will do our best to add them. But on the topic of the future of the Sleep Viewer, I am trying to make exporting work like how it should '(currently broken on mobile)'. I would also like to implement all the island backgrounds in the future. This rework was great refresher from the Cafe Viewer, please enjoy.</p>
+                           </div>
+                           <button class="btn" type="button" id="mailconnect"></button>
+                        </div>
+                     </div>
+                     <!-- item end -->
+                  </div>
+              </div>
+           </div>
+        </div>
+     </section>
+       <div class="popup-box">
+          <div class="popup-content">
+              <div class="popup-header">
+                 <h3></h3>
+                 <span class="popup-close-icon">&times;</span>
+              </div>
+              <div class="popup-body">
+
+              </div>
+              <div class="popup-footer">
+                <button class="btn popup-close-btn" style="display: none;">Close</button>
+              </div>
+          </div>
+       </div>
+      <script src="Mail/scriptt.js"></script>
+    <!--               -->
+    <!--  News -->
+
+
+    <div class="DexBase" id="button-container" class="image-button"></div>
+    <!-- Canvas Desktop -->
+    <!--               -->
+    <div class="ModelBG" id="ModelBGD">
+
+    <div ><canvas id="screen" class="screen" ></canvas></div>
+    <!--               -->
+    <!-- Canvas Desktop -->
+
+    <div class="white-box" id="WhiteBoxx"></div>
+    <div ><button class="CloseModel" id="UICloseBTN" onclick ="CloseModelUI()"><img src="UI/btn_close.png"></button></div>
+
+    <!-- Gender/Shiny Buttons -->
+    <div ><button class="Image-ButtonGM" id="UICloseGMBTN" onclick ="toggleMale()"><img src="UI/gender_male.png"></button></div>
+    <div ><button class="Image-ButtonGF" id="UICloseGFBTN" onclick ="toggleFemale()"><img src="UI/gender_female.png"></button></div>
+    <div ><button class="Image-ButtonGU" id="UICloseGUBTN" onclick ="toggleDefault()"><img src="UI/gender_unknown.png"></button></div>
+    <div class="ShinyContainer" id="UICloseShiny" ><div class="daynight" ><label  for="checkbox"><input type="checkbox" name="" onclick="myShiny()" autocomplete="off" id="checkbox"><div class="toggle"><div class="star1"></div><div class="star2"></div></div></label></div></div>
+
+    <!-- Sleep Styles -->
+    <p style="display: none;" id="myParagraph">pokemon_1</p>
+    <div class="Image-ButtonGUIDiv" id="UICloseMCBTN">
+        <div ><button class="Image-ButtonGUI" id="SleepMoveBTN" style="display: none; margin-top: 0%;" onclick ="SleepMove()"><img src="UI/AnimationMoveBTN.png"></button></div>
+        <div ><button class="Image-ButtonGUI" id="SleepStandBTN" style="display: none; margin-top: 50px;" onclick ="SleepStand()"><img src="UI/AnimationStandBTN.png"></button></div>
+        <div ><button class="Image-ButtonGUI" id="SleepNormalBTN" style="display: none; margin-top: 100px;" onclick ="SleepNormal()"><img src="UI/AnimationNormalBTN.png"></button></div>
+        <div ><button class="Image-ButtonGUI" id="SleepDrowseBTN" style="display: none; margin-top: 150px;" onclick ="SleepDrowse()"><img src="UI/AnimationDrowseBTN.png"></button></div>
+    </div>
+
+    <!-- Settings -->
+    <div class="optionAnimations" ><select class="uk-select" id="optionAnimations"></select>&nbsp;&nbsp;&nbsp;&nbsp;&emsp;Animations</div>
+    <div class="optionSkins" ><select class="uk-select" id="optionSkins"></select>&emsp;&emsp;&emsp;Texture</div>
+    <div class="optionLoop" ><p><label><input style="margin-left: 10px;" class="uk-checkbox" type="checkbox" id="optionLoop"> Loop</label></p></div>
+    <div class="optionScale" ><input class="uk-input" type="number" min="0.01" step="0.01" id="optionScale">&nbsp;&nbsp;&nbsp;Scale</div>
+
+    <input class="sliderY" orient="vertical" type="range" max="800" min="0" value="400" id="optionY">
+    <div style="display: none;">Y:</div> <div id="1Y" style="font-weight:bold;color:red"></div>
+    <input class="sliderX" orient="vertical" type="range" max="800" min="0" value="460" id="optionX">
+    <div style="display: none;">X:</div> <div id="2X" style="font-weight:bold;color:red"></div>
+
+    <!-- Export -->
+    <div ><button class="SaveExport" id="optionExport"><img src="UI/save.png"></button></div>
+
+
+
+</body>
+
+
+
+
+<bodyy>
+    <nav class="uk-navbar-container" uk-navbar style="position: fixed;background: none; margin-left: 400px; display: none;">
         <div class="uk-navbar-left">
-    
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
                     <button class="uk-button uk-button-default" type="button" uk-toggle="target: #sidebar-options"><span uk-icon="cog"></span></button>
                 </li>
             </ul>
-    
+
         </div>
     </nav>
-    
 
-    <div id="sidebar-options" uk-offcanvas>
+
+    <div style="margin-left: 400px; display: none;" id="sidebar-options" uk-offcanvas>
         <div class="uk-offcanvas-bar">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -70,7 +241,7 @@
             <select class="uk-select" id="optionAnimations">
             </select>
             <p><label><input class="uk-checkbox" type="checkbox" id="optionLoop"> Loop</label></p>
-            <!--<p><label><input class="uk-checkbox" type="checkbox" id="optionTalkSound"></label></p>
+            <!--<p><label><input class="uk-checkbox" type="checkbox" id="optionTalkSound"></label></p> -->
             <!-- Advanced Options -->
             <ul uk-accordion>
                 <li>
@@ -131,9 +302,6 @@
                                     <option value="video/webm">.webm</option>
                                 </select>
                             </div>
-                            <div class="uk-width-1-1">
-                                <button class="uk-button uk-button-default" id="optionExport">Export</button>
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -142,7 +310,7 @@
     </div>
 
     <!-- Main Canvas -->
-    <canvas id="screen"></canvas>
+    <!-- <canvas id="screen" class="screen"></canvas> -->
 
     <!-- load it -->
     <script>
@@ -161,12 +329,12 @@
             y: document.getElementById("optionY"),
             FPS: document.getElementById("optionFPS"),
             export: document.getElementById("optionExport"),
-            exportType: document.getElementById("optionExportType") 
+            exportType: document.getElementById("optionExportType")
         }
 
         // Init models
         let dataModels = JSON.parse(httpGet("./data/models.json"))
-	    
+
         for(var i in dataModels) {
             let opt = document.createElement("option");
             opt.value = dataModels[i];
@@ -183,11 +351,11 @@
         option.skins.onchange = function() {
             setSkinByName(this.value);
         }
-	    
+
         option.animations.onchange = function() {
             playAnimation(this.value);
         }
-	    
+
         //option.colorr.onchange = function() {
             //setColor(this.value);
         //}
@@ -210,7 +378,7 @@
             if(isCharacterLoaded)
                 char.scale.x = char.scale.y = Math.max(option.scale.value, 0);
         }
-	    
+
 	option.scaleFit.ontouchend = function() {
 	    if(isCharacterLoaded)
 		char.scale.x = char.scale.y = option.scale.value = option.models.value.indexOf("_home") != -1 ? Math.max(app.renderer.height/char.spineData.height, app.renderer.width/char.spineData.width) : Math.min(app.renderer.height/char.spineData.height, app.renderer.width/char.spineData.width);
@@ -347,8 +515,8 @@
         // Start
         reCanvas();
         loadChar(option.models.value);
-	    
-  
+
+
         let lastPinchDistance = null;
 
         canvasScreen.addEventListener("touchstart", handleTouchStart);
@@ -386,7 +554,7 @@
         function handleTouchEnd(e) {
             lastPinchDistance = null;
         }
-	    
+
 
     </script>
     <!-- Exporter -->
@@ -409,5 +577,239 @@
             </div>
         </div>
     </div>
-</body>
+</bodyy>
+
+
+
+
+
+
+
+
+
+<script>
+    var slideY = document.getElementById("optionY");
+    var slideX = document.getElementById("optionX");
+    var y = document.getElementById("1Y");
+    var x = document.getElementById("2X");
+
+    slideY.oninput = function() {
+        //y.innerHTML = this.value;
+    }
+    slideX.oninput = function() {
+        //x.innerHTML = this.value;
+    }
+</script>
+
+
+
+
+
+
+
+<script>
+  // Function to update paragraph content
+  function updateParagraph() {
+    var paragraph = document.getElementById("myParagraph");
+    paragraph.textContent = filename; // Assuming filename is defined elsewhere
+  }
+  const paragraph = document.getElementById("myParagraph");
+  const paragraphText = paragraph.textContent;
+
+    function myShiny() {
+        const paragraph = document.querySelector("#myParagraph");
+        const paragraphText = paragraph.textContent;
+        ShinyPokemonModel(paragraphText)
+    }
+    function SleepDrowse() {
+        const paragraph = document.querySelector("#myParagraph");
+        const paragraphText = paragraph.textContent;
+        SleepStyleDrowse(paragraphText)
+    }
+    function SleepNormal() {
+        const paragraph = document.querySelector("#myParagraph");
+        const paragraphText = paragraph.textContent;
+        SleepStyleNormal(paragraphText)
+    }
+    function SleepStand() {
+        const paragraph = document.querySelector("#myParagraph");
+        const paragraphText = paragraph.textContent;
+        SleepStyleStand(paragraphText)
+    }
+    function SleepMove() {
+        const paragraph = document.querySelector("#myParagraph");
+        const paragraphText = paragraph.textContent;
+        SleepStyleMove(paragraphText)
+    }
+  const filenameParagraph = document.getElementById("filename-paragraph"); // Replace with your ID
+
+
+
+    ///
+
+    let sleepStyles; // variable to hold sleep styles
+
+    function checkStyle() {
+        const paragraph = document.querySelector("#myParagraph");
+        const paragraphText = paragraph.textContent;
+        fetch("data/NormalModel.json")
+            .then(response => response.json())
+            .then(data => {
+                sleepStyles = data;
+                if (sleepStyles.includes(paragraphText)) {
+                    showNormalButton();
+                } else { hideNormalButton();}
+            })
+            .catch(error => console.error(error));
+        fetch("data/StandModel.json")
+            .then(response => response.json())
+            .then(data => {
+                sleepStyles = data;
+                if (sleepStyles.includes(paragraphText)) {
+                    showStandButton();
+                } else { hideStandButton();}
+            })
+            .catch(error => console.error(error));
+        fetch("data/DrowseModel.json")
+            .then(response => response.json())
+            .then(data => {
+                sleepStyles = data;
+                if (sleepStyles.includes(paragraphText)) {
+                    showDrowseButton();
+                } else { hideDrowseButton();}
+            })
+            .catch(error => console.error(error));
+        fetch("data/MoveModel.json")
+            .then(response => response.json())
+            .then(data => {
+                sleepStyles = data;
+                if (sleepStyles.includes(paragraphText)) {
+                    showMoveButton();
+                } else { hideMoveButton();}
+            })
+            .catch(error => console.error(error));
+    }
+    //Normal
+    function showNormalButton() {
+        const sleepButton = document.getElementById("SleepNormalBTN");
+        sleepButton.style.display = "block";
+        sleepButton.style.width = "200px";
+    }
+    function hideNormalButton() {
+        const sleepButton = document.getElementById("SleepNormalBTN");
+        sleepButton.style.display = "none";
+    }
+    //Stand
+    function showStandButton() {
+        const sleepButton = document.getElementById("SleepStandBTN");
+        sleepButton.style.display = "block";
+        sleepButton.style.width = "200px";
+    }
+    function hideStandButton() {
+        const sleepButton = document.getElementById("SleepStandBTN");
+        sleepButton.style.display = "none";
+    }
+    //Drowse
+    function showDrowseButton() {
+        const sleepButton = document.getElementById("SleepDrowseBTN");
+        sleepButton.style.display = "block";
+        sleepButton.style.width = "200px";
+    }
+    function hideDrowseButton() {
+        const sleepButton = document.getElementById("SleepDrowseBTN");
+        sleepButton.style.display = "none";
+    }
+    //Move
+    function showMoveButton() {
+        const sleepButton = document.getElementById("SleepMoveBTN");
+        sleepButton.style.display = "block";
+        sleepButton.style.width = "200px";
+    }
+    function hideMoveButton() {
+        const sleepButton = document.getElementById("SleepMoveBTN");
+        sleepButton.style.display = "none";
+    }
+
+</script>
+
+
+<script>
+
+  const buttonContainer = document.getElementById('button-container');
+
+  fetch('icons.json')
+    .then(response => response.json())
+    .then(data => {
+      data.forEach((iconName, index) => {
+        const buttonWrapper = document.createElement('div');
+        buttonWrapper.classList.add('button-wrapper'); // Add a class for styling the wrapper
+
+        const button = document.createElement('button');
+        button.style.backgroundImage = `url(Icons/${iconName})`;
+        button.style.backgroundSize = 'cover';
+        button.style.backgroundPosition = 'center';
+
+        const filename = iconName.replace(/\.png$/, "");
+        var paragraphText = paragraph.textContent;
+
+        // Create a span element for the number below the button
+        const numberSpan = document.createElement('span');
+        numberSpan.textContent = (index + 1).toString().padStart(4, '0');
+        numberSpan.classList.add('button-number'); // Add a class for styling
+
+        // Append the button and span element to the wrapper
+        buttonWrapper.appendChild(button);
+        buttonWrapper.appendChild(numberSpan);
+
+        // Append the wrapper to the button container
+        buttonContainer.appendChild(buttonWrapper);
+
+        // Click event handler for each button
+        button.addEventListener('click', () => {
+          PokemonModel(filename)
+          var paragraph = document.getElementById("myParagraph");
+          paragraph.textContent = filename;
+          var paragraphText = paragraph.textContent;
+          checkStyle()
+          showWhiteBox()
+        });
+
+      });
+    })
+    .catch(error => console.error(error));
+
+</script>
+
+
+<style>
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    opacity: 1;
+    border: none;
+
+  }
+  button:hover {
+    animation: enlarge-shake 0.3s ease-in-out forwards;
+  }
+
+  .button-number {
+    margin-top: 5px;
+    font-family: "M PLUS 1p";
+    font-weight: 500;
+
+  }
+</style>
+
+
 </html>
