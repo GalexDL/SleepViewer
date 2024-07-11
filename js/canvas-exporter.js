@@ -1,5 +1,5 @@
 // Main
-function exportAnimation(FPS = 24) {
+function exportAnimation(FPS = 60) {
   let exportCanvas = document.createElement("canvas");
   exportCanvas.id = "export-canvas";
   exportCanvas.style.display = "none";
@@ -7,11 +7,14 @@ function exportAnimation(FPS = 24) {
   let exportVideo = document.createElement("video");
   exportVideo.controls = true;
   exportVideo.id = "export-video";
+  exportCanvas.style.backgroundColor = "transparent";
+
 
   let appExport = new PIXI.Application({
     width: window.innerWidth,
     height: window.innerHeight,
     view: exportCanvas,
+    backgroundColor: 0x00000000,
   });
   appExport.loader
     .add("char", `./${option.models.value}`)
