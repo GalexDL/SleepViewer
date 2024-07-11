@@ -223,7 +223,13 @@ function mailtest() {
     document.getElementById('mailconnect').click()
 }
 
-
+$.ajax({
+   async: true,   // this will solve the problem
+   type: "POST",
+   url: "/Page/Method",
+   contentType: "application/json",
+   data: JSON.stringify({ ParameterName: paramValue }),
+});
 
 
 
