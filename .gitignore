@@ -1,8 +1,0 @@
-converted_models/
-raw_assets/
-raw_models/
-env
-dist
-build
-__pycache__
-*.egg-info
